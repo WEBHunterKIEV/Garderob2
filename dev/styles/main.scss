@@ -6,18 +6,23 @@
 body {
     min-height: 2000px;
     #hero_wrap {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(/images/header/slide1.jpg);
-        background-position: center;
         width: 100%;
         height: 100vh;
+        z-index: 1;
+        #hero_BG_image {
+            position: absolute;
+            z-index: 0;
+        }
         .hero {
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
+            z-index: 2;
             h1,.h1_title,.h1_button {
                 font-family: 'Roboto', sans-serif;
                 color: white;
