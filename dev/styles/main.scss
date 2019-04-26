@@ -12,17 +12,32 @@ body {
         align-items: center;
         width: 100%;
         height: 100vh;
-        z-index: 1;
+        background: black;
+        z-index: 2;
         #hero_BG_image {
             position: absolute;
-            z-index: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            img,.overlay {
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                z-index: 0;
+            }
+            .overlay {
+                background: rgba(0,0,0,0.4);
+                z-index: 1;
+            }
         }
         .hero {
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            z-index: 2;
+            z-index: 3;
             h1,.h1_title,.h1_button {
                 font-family: 'Roboto', sans-serif;
                 color: white;
