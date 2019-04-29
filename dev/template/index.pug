@@ -9,22 +9,8 @@ html(lang="en")
         script(src="js/main.js")
         title Гардеробные комнаты под заказ
     body
-        header
-            nav
-                .nav_logo_wrap 
-                    p MyLOGO
+        include sections/navi
         main
-            section#hero_wrap
-                #hero_BG_image
-                    .overlay
-                    img(src="/images/header/slide1.jpg",class="show")
-                    img(src="/images/header/slide2.jpg")
-                    img(src="/images/header/slide3.jpg")
-                    img(src="/images/header/slide4.jpg")
-                    img(src="/images/header/slide5.jpg")
-                    img(src="/images/header/slide6.jpg")
-                .hero
-                    h1 Гардеробные комнаты
-                    p.h1_title Функциональность, качество, комфорт!
-                    p.h1_button Заказать
+            include sections/hero
+            
                     

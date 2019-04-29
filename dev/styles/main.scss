@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
 * {
     margin: 0;
     padding: 0;
 }
 body {
     min-height: 2000px;
+
+
+    // navi scss
     nav {
         position: fixed;
         z-index: 10;
@@ -22,6 +25,10 @@ body {
             align-items: center;
         }
     }
+    // end navi scss
+
+
+    // hero
     #hero_wrap {
         position: relative;
         display: flex;
@@ -40,7 +47,7 @@ body {
             z-index: 1;
             img,.overlay {
                 position: absolute;
-                width: 110%;
+                width: 100%;
                 height: 100vh;
                 overflow: hidden;
                 z-index: 0;
@@ -76,5 +83,10 @@ body {
             }
         }
     }
+    // end hero
+
+
+    // category
+
 }
 
