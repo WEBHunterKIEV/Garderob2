@@ -84,7 +84,74 @@ body {
         }
     }
     // end hero
+    #cat {
+        margin: 10vmax 2vmax;
 
+        // cat item 1
+        .cat_item_wrap {
+            display: flex;
+            justify-content: space-between;
+            .cat_item_leftSide {
+                display: flex;
+                position: relative;
+                width: 60vw;
+                height: 30vw;
+                background: url(/images/cat/cat1.jpg);
+                background-position: center;
+                z-index: 0;
+                .cat_item_leftSide_overlay {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.4);
+                    z-index: 1;
+                }
+            }
+            .cat_item_rightSide {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                right: 2vmax;
+                width: 60vw;
+                height: 30vw;
+                z-index: 3;
+                h2 {
+                    display: flex;
+                    position: absolute;
+                    left: -20vw;
+                    font-size: 3vmax;
+                    color: white;
+                    padding: 0 5vmax;
+                    z-index: 6;
+                }
+                .cat_item_rightSide_innerBox {
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+                    height: 20vw;
+                    border: 2px rgba(32,36,37,0.7) solid;
+                    border-radius: 1%;
+                    z-index: 4;
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 40%;
+                        padding-right: 10%;
+                        color: rgb(32,36,37);
+                        vertical-align: middle;
+                        line-height: 2vmax
+                    }
+                }
+            }
+        }
+        // end cat item 1
+
+
+    }
 
     // category
 
