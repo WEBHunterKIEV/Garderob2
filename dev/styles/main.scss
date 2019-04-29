@@ -87,16 +87,26 @@ body {
     #cat {
         margin: 10vmax 2vmax;
 
-        // cat item 1
+        .cat_BG_1 {
+            background: url(/images/cat/cat1.jpg);
+        }
+        .cat_BG_2 {
+            background: url(/images/cat/cat2.jpg);
+        }
+        .cat_BG_3 {
+            background: url(/images/cat/cat3.jpg);
+        }
+
+        // cat item 1,3
         .cat_item_wrap {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 5vmax;
             .cat_item_leftSide {
                 display: flex;
                 position: relative;
                 width: 60vw;
                 height: 30vw;
-                background: url(/images/cat/cat1.jpg);
                 background-position: center;
                 z-index: 0;
                 .cat_item_leftSide_overlay {
@@ -110,6 +120,8 @@ body {
                     z-index: 1;
                 }
             }
+            // invert leftSide
+            
             .cat_item_rightSide {
                 display: flex;
                 align-items: center;
@@ -140,15 +152,30 @@ body {
                         justify-content: center;
                         align-items: center;
                         max-width: 40%;
-                        padding-right: 10%;
+                        padding: 0 10%;
                         color: rgb(32,36,37);
                         vertical-align: middle;
                         line-height: 2vmax
                     }
                 }
             }
+            // invert
+            .cat_item_rightSide_invert {
+                left: 2vmax;
+                h2 {
+                    left: unset;
+                    right: -20vw !important;
+                }
+                div {
+                    justify-content: flex-start !important;
+                }
+            }
         }
-        // end cat item 1
+        // wrap invert
+        .cat_item_wrap_invert {
+            justify-content: flex-end;
+        }
+
 
 
     }
