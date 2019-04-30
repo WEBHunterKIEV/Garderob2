@@ -23,6 +23,20 @@ body {
             height: 100%;
             justify-content: center;
             align-items: center;
+            .toggle {
+                display: flex;
+                position: absolute;
+                background-color: orange;
+                right: 5vw;
+                width: 35px;
+                height: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+    @media (max-width: 1025px) {
+        nav {
+            height: 6vmax;
         }
     }
     // end navi scss
@@ -49,7 +63,6 @@ body {
                 position: absolute;
                 width: 100%;
                 height: 100vh;
-                overflow: hidden;
                 z-index: 0;
             }
             .overlay {
@@ -69,10 +82,10 @@ body {
                 margin: 1vmax;
             }
             h1 {
-                font-size: 3vmax;
+                font-size: 3em;
             }
             .h1_title,.h1_button {
-                font-size: 1.5vmax;
+                font-size: 1.5em;
             }
             .h1_button {
                 background-color: orange;
@@ -81,6 +94,14 @@ body {
                 cursor: pointer;
 
             }
+        }
+    }
+    @media (max-width: 769px) {
+        .hero h1 {
+            font-size: 7vw !important;
+        }
+        .h1_title,.h1_button {
+            font-size: 4vw !important;
         }
     }
     // end hero
@@ -155,7 +176,7 @@ body {
                         padding: 0 10%;
                         color: rgb(32,36,37);
                         vertical-align: middle;
-                        line-height: 2vmax
+                        line-height: 2.2vmax
                     }
                 }
             }
@@ -176,9 +197,25 @@ body {
             justify-content: flex-end;
         }
 
-
+        @media (max-width: 769px) {
+            .cat_item_rightSide h2 {
+                padding: 0;
+            }
+            .cat_item_rightSide_innerBox {
+                display: none !important;
+            }
+            .cat_item_leftSide {
+                width: 100% !important;
+                height: 50vw !important;
+            }
+            .cat_item_rightSide {
+                height: 50vw !important;
+            }
+        }
 
     }
+
+    
 
     // category
 
