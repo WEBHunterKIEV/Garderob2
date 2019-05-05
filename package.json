@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WEBHunterKIEV/Garderob.git"
+    "url": "git+https://github.com/WEBHunterKIEV/Garderob2.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WEBHunterKIEV/Garderob/issues"
+    "url": "https://github.com/WEBHunterKIEV/Garderob2/issues"
   },
-  "homepage": "https://github.com/WEBHunterKIEV/Garderob#readme",
+  "homepage": "https://github.com/WEBHunterKIEV/Garderob2#readme",
   "devDependencies": {
     "browser-sync": "^2.26.5",
     "gulp": "^4.0.1",
