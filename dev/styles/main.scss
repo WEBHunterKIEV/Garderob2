@@ -96,6 +96,10 @@ body {
             width: 100%;
             height: 100vh;
             z-index: 1;
+            /*img {
+                transform-origin: center;
+                transition: all 15s;
+            }*/
             img,.overlay {
                 position: absolute;
                 width: 100%;
