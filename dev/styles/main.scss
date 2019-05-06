@@ -23,14 +23,12 @@ body {
             height: 100%;
             justify-content: center;
             align-items: center;
-            transition: all 3s;
             .logo {
-                position: static;
-                left: 5vw;
-            }
-            .logo_open {
-                display: none;
-                width: 20vw;
+                position: fixed;
+                width: 100px;
+                text-align: center;
+                left: calc(50vw - 50px);
+                transition: all 600ms;
             }
             .toggle {
                 display: flex;
@@ -65,7 +63,13 @@ body {
             display: none;
             justify-content: space-around;
             align-items: center;
-            flex-basis: 50vw;
+            flex-basis: 60vw;
+            a {
+                font-size: 1.3em;
+                text-shadow: 1px 1px 2px black, 0 0 1em black;
+                text-decoration: none;
+                color: orange;
+            }
         }
     }
     .nav_open {
@@ -73,7 +77,23 @@ body {
     }
     @media (max-width: 1025px) {
         nav {
-            height: 6vmax;
+            height: 7.5vmax;
+        }
+        .nav_full {
+            height: 100vh;
+        }
+        .nav_elements_show {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 70vh;
+            width: 100vw;
+            flex-flow: column nowrap;
+            padding-top: 20vh;
+        }
+        .logo_wrap_full {
+            align-items: flex-start !important;
+            padding-top: 2vmax;
         }
     }
     // end navi scss
@@ -96,15 +116,13 @@ body {
             width: 100%;
             height: 100vh;
             z-index: 1;
-            /*img {
-                transform-origin: center;
-                transition: all 15s;
-            }*/
+            overflow: hidden;
             img,.overlay {
                 position: absolute;
                 width: 100%;
                 height: 100vh;
                 z-index: 0;
+                
             }
             .overlay {
                 background: rgba(0,0,0,0.4);
@@ -123,15 +141,20 @@ body {
                 margin: 1vmax;
             }
             h1 {
+                text-shadow: 1px 1px 2px black, 0 0 1em gray;
                 font-size: 3em;
             }
             .h1_title,.h1_button {
+                text-shadow: 1px 1px 2px black, 0 0 1em gray;
                 font-size: 1.5em;
             }
             .h1_button {
                 background-color: orange;
-                padding: .5vmax 1.5vmax;
-                border-radius:  0 50% 0 50%;
+                padding: .8vmax 1.5vmax;
+                border-radius:  45%;
+                -webkit-box-shadow: 2px 7px 11px -6px rgba(0,0,0,0.68);
+                -moz-box-shadow: 2px 7px 11px -6px rgba(0,0,0,0.68);
+                box-shadow: 2px 7px 11px -6px rgba(0,0,0,0.68);
                 cursor: pointer;
 
             }
@@ -139,10 +162,19 @@ body {
     }
     @media (max-width: 769px) {
         .hero h1 {
-            font-size: 7vw !important;
+            font-size: 7.5vmin !important;
         }
-        .h1_title,.h1_button {
-            font-size: 4vw !important;
+        .h1_title {
+            font-size: 5vmin !important;
+        }
+        .h1_button {
+            font-size: 7vmin !important;
+            padding: 1vmax 4vmax;
+        }
+        @media (min-height: 479px) {
+            img,.overlay {
+                width: auto !important;
+            }
         }
     }
     // end hero
@@ -206,7 +238,7 @@ body {
                     justify-content: flex-end;
                     width: 100%;
                     height: 20vw;
-                    border: 2px rgba(32,36,37,0.7) solid;
+                    border: 2px rgb(98, 101, 102) solid;
                     border-radius: 1%;
                     z-index: 4;
                     p {
