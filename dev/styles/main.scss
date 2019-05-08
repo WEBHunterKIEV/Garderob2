@@ -328,14 +328,16 @@ body {
             display: flex;
             min-height: 70vh;
             margin: 6vmax;
+            // item1
             .how_item1 {
                 width: 60vw;
                 height: 25vw;
-                border: 2px rgb(98, 101, 102) solid;
+                background: rgba(255, 255, 255, 0.116);
                 .nom {
                     color: white;
                     font-size: 15em;
                     margin: -7vmax 3vmax 1vmax 3vmax;
+                    text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
                 }
                 .how_item_text {
                     font-size: 1.5em;
@@ -354,6 +356,50 @@ body {
                     color: rgb(32,36,37);
                     font-size: 1.2em;
                     text-align: center;
+                }
+            }
+
+            // item2
+            .how_item2 {
+                display: flex;
+                position: relative;
+                width: 55vw;
+                height: 50vw;
+                img {
+                    width: 40vw;
+                    position: absolute;
+                    z-index: 0;
+                    box-shadow: 0px 6px 6px 6px rgba(32, 32, 32, 0.8);
+                    filter: brightness(75%);
+                    &:first-child {
+                        top: -2vw;
+                        left: 15vw;
+                        z-index: 1;
+                    }
+                    &:last-child {
+                        top: 15vw;
+                        left: 25vw;
+                        z-index: 2;
+                    }
+                }
+                .nom2 {
+                    position: absolute;
+                    color: white;
+                    font-size: 15em;
+                    margin: -7vmax 0 0 29vmax;
+                    text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
+                    z-index: 5;
+                }
+            }
+            .how_item2_side {
+                width: 40vw;
+                height: 15vw;
+                background: #F7F7F7;
+                box-shadow: 0px 6px 6px 6px rgba(32, 32, 32, 0.8);
+                margin-top: 5vw;
+                z-index: 4;
+                p {
+                    padding: 2vmax 1vmax;
                 }
             }
         }
