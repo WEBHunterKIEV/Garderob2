@@ -5,9 +5,17 @@ section#how
             p.nom 1 
             p.how_item_text Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero recusandae repellendus laborum fugit officiis ex aperiam magnam quia accusamus provident, quasi in suscipit aliquid, molestiae ipsum inventore placeat vel!
         .how_item1_side
-            h5 Ваши контакты
-            //input(type="tel" placeholder="телефон")
-            //input(type="text" placeholder="имя")
+            form
+                h5 Ваши контакты
+                .getPhone
+                    input(id="phone" name="phone" type="text" placeholder="телефон")
+                    input(type="text" placeholder="имя")
+            h5 Или позвоните нам:
+            .garderob_phones
+                a(href="tel:+380504111176") 050 411 1176
+                a(href="tel:+380975996460") 097 599 6460
+            .garderob_mail
+                a(href="mailto:vlad@htmlbook.ru") Задавайте вопросы по электронной почте info@garderob.kiev.ua
     .how_item
         .how_item2
             img(src="/images/how/sheme3.jpg", alt="схема гардероба3")

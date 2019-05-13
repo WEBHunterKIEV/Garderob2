@@ -373,11 +373,34 @@ body {
                 width: 30vw;
                 height: 25vw;
                 background: #F7F7F7;
-                h5 {
+                h5,a {
                     padding-top: 2vmax;
                     color: rgb(32,36,37);
                     font-size: 1.2em;
                     text-align: center;
+                }
+                a {
+                    text-decoration: none;
+                    padding: 2vw;
+                }
+                input {
+                    width: 11vw;
+                    height: 1vw;
+                    border: 2px rgb(98, 101, 102) solid;
+                    border-radius: 5px;
+                    padding: .3vw;
+                }
+                .getPhone,.garderob_phones,.garderob_mail {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 1vw 2vw;
+                }
+                .garderob_phones {
+                    padding: .2vw;
+                }
+                .garderob_mail {
+                    text-align: justify;
+                    font-size: .8em;
                 }
             }
 
