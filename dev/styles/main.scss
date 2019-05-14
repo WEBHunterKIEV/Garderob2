@@ -514,13 +514,13 @@ body {
                     background: rgba(86, 85, 117, 0.98);
                     box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
                     color: #F7F7F7;
-                    padding: 3vw;
+                    padding: 6vw 3vw 1vw 3vw;
                     z-index: 3;
                     .nom3 {
                         position: absolute;
                         color: white;
                         font-size: 12em;
-                        margin: -12vmax 0 0 -2vmax;
+                        margin: -15vmax 0 0 -2vmax;
                         text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
                         z-index: 5;
                     }
@@ -534,6 +534,50 @@ body {
                     }
                 }
             }
+
+            // How item 4
+            .how_item4 {
+                display: flex;
+                position: relative;
+                width: 100%;
+                img {
+                    display: flex;
+                    position: absolute;
+                    right: 0;
+                    width: 40vw;
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                }
+                .how_item4_text {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    position: absolute;
+                    top: 3vw;
+                    left: 0;
+                    width: 45vw;
+                    height: 15vw;
+                    background: rgba(85, 117, 100, 0.98);
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    color: #F7F7F7;
+                    padding: 6vw 3vw 1vw 3vw;
+                    z-index: 3;
+                    .nom4 {
+                        position: absolute;
+                        color: white;
+                        font-size: 12em;
+                        margin: -15vmax 0 0 20vmax;
+                        text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
+                        z-index: 5;
+                    }
+                    h3 {
+                        font-size: 3em;
+                        padding-bottom: 2vmax;
+                    }
+                    p {
+                        font-size: 1.2em;
+                        text-align: justify;
+                    }
+                }
+            } 
         }
     }
 }
