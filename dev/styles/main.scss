@@ -355,17 +355,25 @@ body {
                 width: 60vw;
                 height: 25vw;
                 background: rgba(255, 255, 255, 0.116);
-                .nom {
-                    color: white;
-                    font-size: 12em;
-                    margin: -7vmax 3vmax 1vmax 3vmax;
-                    text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
-                }
-                .how_item_text {
-                    font-size: 1.5em;
-                    color: white;
-                    padding: 2vmax 7vmax 0 2vmax;
-                    text-align: justify;
+                .how_item1_text {
+                    padding: 7vmax 10vw 0 2vmax;
+                    color: #F7F7F7;
+                    h3 {
+                        font-size: 3em;
+                        padding-bottom: 2vmax;
+                    }
+                    p {
+                        font-size: 1.2em;
+                        text-align: justify;
+                    }
+                    .nom {
+                        position: absolute;
+                        color: white;
+                        font-size: 12em;
+                        margin: -15vmax 0 0 2vmax;
+                        text-shadow: 1px 1px 2px black, 0 0 0.06em #252525;
+                        z-index: 5;
+                    }
                 }
             }
             .how_item1_side {
@@ -417,7 +425,6 @@ body {
                 display: flex;
                 position: relative;
                 width: 100%;
-                height: 50vw;
                 img {
                     width: 33vw;
                     position: absolute;
@@ -442,6 +449,7 @@ body {
                     width: 60vw;
                     height: 35vw;
                     background: rgba(85, 117, 117, 0.98);
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
                     z-index: 2;
                     .how_item2_text_area {
                         padding: 7vmax 26vw 0 2vmax;
@@ -471,15 +479,59 @@ body {
                     }
                 }
             }
-            .how_item2_side {
-                width: 40vw;
-                height: 15vw;
-                background: #F7F7F7;
-                box-shadow: 0px 6px 6px 6px rgba(32, 32, 32, 0.8);
-                margin-top: 5vw;
-                z-index: 4;
-                p {
-                    padding: 2vmax 1vmax;
+
+
+            // item3 
+            .how_item3 {
+                display: flex;
+                position: relative;
+                width: 100%;
+                img {
+                    display: flex;
+                    position: absolute;
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    &:first-child {
+                        left: 0;
+                        top: 0;
+                        height: 25vw;
+                        z-index: 0;
+                    }
+                    &:last-child {
+                        left: 25vw;
+                        top: 3vw;
+                        height: 20vw;
+                        z-index: 1;
+                    }
+                }
+                .how_item3_text {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    position: absolute;
+                    top: 6vw;
+                    right: 0;
+                    width: 30vw;
+                    height: 15vw;
+                    background: rgba(86, 85, 117, 0.98);
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    color: #F7F7F7;
+                    padding: 3vw;
+                    z-index: 3;
+                    .nom3 {
+                        position: absolute;
+                        color: white;
+                        font-size: 12em;
+                        margin: -12vmax 0 0 -2vmax;
+                        text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
+                        z-index: 5;
+                    }
+                    h3 {
+                        font-size: 3em;
+                        padding-bottom: 2vmax;
+                    }
+                    p {
+                        font-size: 1.2em;
+                        text-align: justify;
+                    }
                 }
             }
         }
