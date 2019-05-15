@@ -578,6 +578,100 @@ body {
                     }
                 }
             } 
+            
+            // How item 5
+            .how_item5 {
+                display: flex;
+                position: relative;
+                width: 100%;
+                img {
+                    display: flex;
+                    position: absolute;
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    z-index: 2;
+                    &:first-child {
+                        top: 4vw;
+                        left: 0;
+                        width: 30vw;
+                    }
+                    &:last-child {
+                        top: 2vw;
+                        right: 0;
+                        width: 40vw;
+                    }
+                }
+                .how_item5_text {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    position: absolute;
+                    background: rgba(117, 117, 85, 0.98);
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    color: #F7F7F7;
+                    left: 20vw;
+                    width: 30vw;
+                    height: 28vw;
+                    padding: 2vw;
+                    z-index: 3;
+                    .nom5 {
+                        position: absolute;
+                        color: white;
+                        font-size: 12em;
+                        margin: -15vmax 0 0 20vmax;
+                        text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
+                        z-index: 5;
+                    }
+                    h3 {
+                        font-size: 3em;
+                        padding-bottom: 2vmax;
+                    }
+                    p {
+                        font-size: 1.2em;
+                        text-align: justify;
+                    }
+                }
+            }
+
+            // how item 6
+            .how_item6 {
+                display: flex;
+                position: relative;
+                width: 100%;
+                img {
+                    display: flex;
+                    position: absolute;
+                    height: 35vw;
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                }
+                .how_item6_text {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    position: absolute;
+                    top: 3vw;
+                    right: 0;
+                    width: 55vw;
+                    height: 25vw;
+                    background: rgba(82, 82, 82, 0.98);
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    color: #F7F7F7;
+                    padding: 2vw;
+                    .nom6 {
+                        position: absolute;
+                        color: white;
+                        font-size: 12em;
+                        margin: -15vmax 0 0 20vmax;
+                        text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
+                        z-index: 5;
+                    }
+                    h3 {
+                        font-size: 3em;
+                        padding-bottom: 2vmax;
+                    }
+                    p {
+                        font-size: 1.2em;
+                        text-align: justify;
+                    }
+                }
+            }
         }
     }
 }
