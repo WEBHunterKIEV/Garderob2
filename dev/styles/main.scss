@@ -690,17 +690,87 @@ body {
     #question {
         display: flex;
         justify-content: space-between;
-        margin: 0 6vmax;
+        margin: 0 6vmax 6vmax 6vmax;
+        .contacts_wrap {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 40vw;
+            padding: 2vw;
+            color: #252525;
+            h3 {
+                font-size: 2vw;
+            }
+            h5,a {
+                padding-top: 2vmax;
+                color: rgb(32,36,37);
+                font-size: 1.2em;
+                text-align: center;
+            }
+            a {
+                text-decoration: none;
+                padding: 2vw;
+            }
+            input {
+                width: 11vw;
+                height: 1vw;
+                border: 2px rgb(98, 101, 102) solid;
+                border-radius: 5px;
+                padding: .8vw;
+            }
+            .getPhone,.garderob_phones,.garderob_mail {
+                display: flex;
+                justify-content: space-around;
+                padding: 1vw 2vw;
+            }
+            .garderob_phones {
+                padding: .2vw;
+                a {
+                    display: flex;
+                    img {
+                        width: 1.5vmax;
+                        height: 1.3vmax;
+                        padding: .1em .4vmax;
+                    }
+                }
+            }
+        }
+        /*.contacts_wrap {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 40vw;
+            padding: 2vw;
+            color: #252525;
+            h3 {
+                width: 100%;
+                font-size: 2vw;
+                color: #252525;
+                text-align: center;
+            }
+            button {
+                background: #F7F7F7;
+                color: #252525;
+                padding: .5vw;
+                font-size: 1.1vw;
+                border-radius: 5px;
+                margin: 1vw;
+                //box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.95);
+            }
+        }*/
         .question_wrap {
             display: flex;
+            width: 40vw;
             form {
                 padding: 2vw;
-                background: rgba(32,32,32,0.05);
+                background: #252525;
                 border-radius: 5px;
                 box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
-                h5 {
+                h3 {
                     font-size: 2vw;
-                    color: rgb(32,36,37);
+                    color: orange;
                     text-align: center;
                     margin-bottom: 1vw;
                 }
@@ -708,6 +778,7 @@ body {
                     display: flex;
                     justify-content: space-between;
                     input {
+                        position: relative;
                         width: 13vw;
                         height: 1vw;
                         border: 2px rgb(98, 101, 102) solid;
@@ -715,6 +786,11 @@ body {
                         padding: .8vw;
                         margin: 1vw;
                         box-shadow: inset 3px 3px 8px -6px rgba(0,0,0,0.63);
+                    }
+                    label {
+                        position: absolute;
+                        color: orange;
+                        margin: 0 0 1vw 1vw;;
                     }
                 }
                 .textarea {
@@ -736,6 +812,15 @@ body {
                 }
             }
         }
+    }
+
+
+
+    // footer
+    footer {
+        width: 100%;
+        height: 10vw;
+        background:rgba(32,32,32,0.05);
     }
 }
 

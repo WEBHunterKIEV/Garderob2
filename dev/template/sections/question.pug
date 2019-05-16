@@ -1,10 +1,32 @@
 section#question
-    .contacts_wrap
+    .contacts_wrap 
+        h3 Готовы заказать?
+        .how_item1_side
+            form
+                h5 Оставьте Ваши контакты
+                .getPhone
+                    input(class="phone" name="phone" type="text" placeholder="телефон")
+                    input(type="text" placeholder="имя")
+            h5 Или позвоните нам:
+            .garderob_phones
+                a(href="tel:+380504111176") 
+                    img(src="images/how/telephone.png")
+                    p 050 411 1176
+                a(href="tel:+380975996460") 
+                    img(src="images/how/telephone.png")
+                    p 097 599 6460
+    //.contacts_wrap
+        h3 Как нас найти?
+        p ул. Викентия Хвойки, 10, этаж 2, офис 16
+        p ГРАФИК РАБОТЫ: Пн — Пт с 9:00 до 18:00
+        p Онлайн заявки: круглосуточно
+        button Заказать консультацию
     .question_wrap
         form
-            h5 Задайте вопрос
+            h3 Задайте вопрос
             .inputs
-                input(type="text" placeholder="Имя")
+                label(for="name") Ваше имя
+                input(type="text" id="name" placeholder="Имя")
                 input(type="email" placeholder="Почта")
             textarea.textarea(placeholder="Сообщение" required)
             button Отправить
