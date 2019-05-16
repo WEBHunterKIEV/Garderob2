@@ -7,6 +7,8 @@ section#question
                 .getPhone
                     input(class="phone" name="phone" type="text" placeholder="телефон")
                     input(type="text" placeholder="имя")
+                    button(type="submit") 
+                        img(src="images/forward-arrow.svg" alt="btn")
             h5 Или позвоните нам:
             .garderob_phones
                 a(href="tel:+380504111176") 
@@ -15,12 +17,16 @@ section#question
                 a(href="tel:+380975996460") 
                     img(src="images/how/telephone.png")
                     p 097 599 6460
-    //.contacts_wrap
-        h3 Как нас найти?
-        p ул. Викентия Хвойки, 10, этаж 2, офис 16
-        p ГРАФИК РАБОТЫ: Пн — Пт с 9:00 до 18:00
-        p Онлайн заявки: круглосуточно
-        button Заказать консультацию
+            .massangers 
+                a(href="#")
+                    p(style="color:#663398") Viber
+                    img(src="images/viber.png")
+                a(href="#")
+                    p(style="color:#2BA2DB") Telegram
+                    img(src="images/teleg.png")
+                a(href="#")
+                    p(style="color:#00CC33") WhatsAPP
+                    img(src="images/whatsapp.png")
     .question_wrap
         form
             h3 Задайте вопрос
