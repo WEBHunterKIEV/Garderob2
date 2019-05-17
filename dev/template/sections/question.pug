@@ -31,9 +31,11 @@ section#question
         form
             h3 Задайте вопрос
             .inputs
-                label(for="name") Ваше имя
-                input(type="text" id="name" placeholder="Имя")
-                label(for="mail") Почта
-                input(type="email" id="mail" placeholder="exemple@mail.com")
+                .inputs_item
+                    label(for="name") Ваше имя
+                    input(type="text" id="name" placeholder="Имя")
+                .inputs_item
+                    label(for="mail") Почта
+                    input(type="email" id="mail" placeholder="exemple@mail.com")
             textarea.textarea(placeholder="Сообщение" required)
             button Отправить
