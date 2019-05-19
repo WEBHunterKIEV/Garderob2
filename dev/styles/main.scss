@@ -201,7 +201,8 @@ body {
     }
     // end hero
     #cat {
-        margin: 10vmax 2vmax;
+        padding: 8vmax 2vmax 3vmax 2vmax;
+        background: rgba(229,231,230,0.98);
         h2 {
             text-shadow: 1px 1px 2px black, 0 0 1em gray;
         }
@@ -253,7 +254,7 @@ body {
                     position: absolute;
                     left: -20vw;
                     font-size: 3vmax;
-                    color: white;
+                    color: rgba(229,231,230,0.98);
                     padding: 0 5vmax;
                     z-index: 6;
                 }
@@ -285,7 +286,7 @@ body {
                         padding: 0 2vw;
                         bottom: -1vw;
                         right: 3vw;
-                        background: #F7F7F7;
+                        background: rgba(229,231,230,0.98);
                         cursor: pointer;
                         img {
                             width: 2em;
@@ -359,7 +360,6 @@ body {
             .how_item1 {
                 width: 60vw;
                 height: 25vw;
-                margin-bottom: 5vw;
                 background: #C0A86A;
                 .how_item1_text {
                     padding: 4vmax 10vw 0 2vmax;
@@ -368,87 +368,95 @@ body {
                         font-size: 1.2em;
                         text-align: justify;
                     }
-                    .nom {
-                        position: absolute;
-                        color: white;
-                        font-size: 10vw;
-                        margin: -10vmax 0 0 2vmax;
-                        text-shadow: 1px 1px 2px black, 0 0 0.06em #252525;
-                        z-index: 5;
-                    }
                 }
             }
             .how_item1_side {
+                display: flex;
+                justify-content: center;
                 margin: -3vw 0 0 -5vw;
-                width: 50vw;
-                height: auto;
-                background: #F7F7F7;
-                box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
-                h5,a {
-                    padding-top: 2vmax;
-                    color: rgb(32,36,37);
-                    font-size: 1.2em;
-                    text-align: center;
-                }
-                a {
-                    text-decoration: none;
-                    padding: 2vw;
-                }
-                input {
-                    width: 11vw;
-                    height: 1vw;
-                    border: 2px rgb(98, 101, 102) solid;
-                    border-radius: 5px;
-                    padding: .8vw;
-                }
-                .getPhone,.garderob_phones,.garderob_mail {
-                    display: flex;
-                    justify-content: space-around;
-                    padding: 1vw 2vw;
-                    button {
-                        height: auto;
-                        width: 2vw;
+                width: 52.5vw;
+                height: 31vw;;
+                background: rgba(229, 231, 230, 0.98);
+                box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
+                margin-bottom: 2vw;
+                .how_item1_side_inner {
+                    width: 34vw;
+                    h5,a {
+                        padding-top: 2vmax;
+                        color: rgb(32,36,37);
+                        font-size: 1.2em;
+                        text-align: center;
+                    }
+                    a {
+                        text-decoration: none;
+                        padding: 2vw;
+                    }
+                    input {
+                        width: 11vw;
+                        height: 1vw;
                         border: 2px rgb(98, 101, 102) solid;
                         border-radius: 5px;
-                        cursor: pointer;
-                        img {
-                            height: 1vw;
-                        }
+                        padding: .8vw;
                     }
-                }
-                .garderob_phones {
-                    padding: .2vw;
-                    a {
+                    .getPhone,.garderob_phones,.garderob_mail {
                         display: flex;
+                        justify-content: space-around;
+                        padding: 1vw 2vw;
+                        button {
+                            height: auto;
+                            width: 2vw;
+                            border: 2px rgb(98, 101, 102) solid;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            img {
+                                height: 1vw;
+                            }
+                        }
+                    }
+                    .garderob_phones {
+                        padding: .2vw;
+                        a {
+                            display: flex;
+                            img {
+                                width: 1.5vmax;
+                                height: 1.3vmax;
+                                padding: .1em .4vmax;
+                            }
+                        }
+                    }
+                    .garderob_mail {
+                        text-align: justify;
+                        font-size: .8em;
+                        a {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            img {
+                                width: 2vw;
+                                margin: .5vw;
+                            }
+                        }
+                    }
+                    .massangers {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        a {
+                            padding: 1vw;
+                            width: 7vw;
+                            filter: grayscale(90%);
+                            transition: all 500ms;
+                            font-size: .8vw;
+                            &:hover {
+                                filter: grayscale(0%);
+                            }
+                        }
                         img {
-                            width: 1.5vmax;
-                            height: 1.3vmax;
-                            padding: .1em .4vmax;
+                            width: 2vw;
                         }
                     }
                 }
-                .garderob_mail {
-                    text-align: justify;
-                    font-size: .8em;
-                }
-                .massangers {
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
-                    a {
-                        padding: 1vw;
-                        width: 7vw;
-                        filter: grayscale(90%);
-                        transition: all 500ms;
-                        font-size: .8vw;
-                        &:hover {
-                            filter: grayscale(0%);
-                        }
-                    }
-                    img {
-                        width: 2vw;
-                    }
-                }
+
             }
 
             // item2
@@ -467,8 +475,8 @@ body {
                     right: 10vw;
                     height: 30vw;
                     z-index: 3;
-                    -webkit-box-shadow: 0px 3px 16px 3px rgba(32,32,32,0.5);
-                            box-shadow: 0px 3px 16px 3px rgba(32,32,32,0.5);
+                    -webkit-box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
+                            box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
                     -webkit-filter: brightness(80%);
                             filter: brightness(80%);
                 }
@@ -495,14 +503,6 @@ body {
                             margin: 2vw auto;
                             text-align: center;
                         }
-                        .nom2 {
-                            position: absolute;
-                            color: white;
-                            font-size: 10vw;
-                            margin: -15vmax 0 0 20vmax;
-                            text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
-                            z-index: 5;
-                        }
                     }
                 }
                 .how_item2_secodBlock {
@@ -524,11 +524,11 @@ body {
                 position: relative;
                 width: 100%;
                 height: 25vw;
-                margin-bottom: 5vw;
+                margin-bottom: 8vw;
                 img {
                     display: flex;
                     position: absolute;
-                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
                     &:first-child {
                         left: 0;
                         top: 0;
@@ -551,18 +551,9 @@ body {
                     width: 35vw;
                     height: 28vw;
                     background: rgba(229,231,230,0.98);
-                    //box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
                     color: #252525;
-                    padding: 4vw 3vw 1vw 3vw;
+                    padding: 3vw 2vw 0 2vw;
                     z-index: 3;
-                    .nom3 {
-                        position: absolute;
-                        color: white;
-                        font-size: 10vw;
-                        margin: -15vmax 0 0 -2vmax;
-                        text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
-                        z-index: 5;
-                    }
                     p {
                         font-size: 1.2em;
                         text-align: justify;
@@ -576,30 +567,43 @@ body {
                 position: relative;
                 width: 100%;
                 height: 25vw;
-                margin-bottom: 3vw;
+                margin-bottom: 4vw;
                 img {
                     display: flex;
                     position: absolute;
-                    left: 0;
+                    top: 2vw;
+                    left: 10vw;
                     width: 40vw;
-                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    height: 26.6vw;
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
+                    z-index: 2;
                 }
                 .how_item4_text {
                     display: flex;
                     flex-flow: column nowrap;
                     position: absolute;
-                    top: 2vw;
+                    top: 0;
                     right: 0;
                     width: 60vw;
-                    height: 25vw;
+                    height: 26.6vw;
                     background: rgba(229, 231, 230, 0.98);
                     color: #252525;
-                    padding: 4vw 3vw 1vw 3vw;
+                    padding: 3vw 2vw 0vw 25.5vw;
                     z-index: 1;
                     p {
                         font-size: 1.2em;
                         text-align: justify;
                     }
+                }
+                .how_item4_secodBlock {
+                    display: flex;
+                    position: absolute;
+                    top: -3vw;
+                    left: 0;
+                    width: 35vw;
+                    height: 34.6vw;
+                    background: #C0A86A;
+                    z-index: 0;
                 }
             } 
             
@@ -609,11 +613,11 @@ body {
                 position: relative;
                 width: 100%;
                 height: 25vw;
-                margin-bottom: 7vw;
+                margin-bottom: 5vw;
                 img {
                     display: flex;
                     position: absolute;
-                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
                     z-index: 2;
                     &:first-child {
                         top: 4vw;
@@ -631,21 +635,12 @@ body {
                     flex-flow: column nowrap;
                     position: absolute;
                     background: rgba(229,231,230,0.98);
-                    //box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
                     color: #252525;
                     left: 20vw;
                     width: 30vw;
                     height: 32vw;
-                    padding: 2vw;
+                    padding: 3vw 2vw;
                     z-index: 3;
-                    .nom5 {
-                        position: absolute;
-                        color: white;
-                        font-size: 10vw;
-                        margin: -15vmax 0 0 20vmax;
-                        text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
-                        z-index: 5;
-                    }
                     p {
                         font-size: 1.2em;
                         text-align: justify;
@@ -662,8 +657,10 @@ body {
                 img {
                     display: flex;
                     position: absolute;
-                    height: 35vw;
-                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    width: 50vw;
+                    height: 33.5vw;
+                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
+                    z-index: 1;
                 }
                 .how_item6_text {
                     display: flex;
@@ -672,19 +669,11 @@ body {
                     top: 3vw;
                     right: 0;
                     width: 60vw;
-                    height: 25vw;
-                    background: rgba(82, 82, 82, 0.98);
-                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    height: 27.5vw;
+                    background: rgb(192, 168, 106);
                     color: #F7F7F7;
-                    padding: 2vw;
-                    .nom6 {
-                        position: absolute;
-                        color: white;
-                        font-size: 10vw;
-                        margin: -15vmax 0 0 20vmax;
-                        text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
-                        z-index: 5;
-                    }
+                    padding: 3vw 2vw 0 25vw;
+                    z-index: 0;
                     p {
                         font-size: 1.2em;
                         text-align: justify;
@@ -762,7 +751,7 @@ body {
             width: 40vw;
             padding: 2vw;
             color: #252525;
-            background:rgba(32,32,32,0.05);
+            background:rgba(229, 231, 230, 0.98);
             border-radius: 5px;
             width: 34vw;
             h3 {
@@ -896,7 +885,7 @@ body {
         display: flex;
         justify-content: space-around;
         padding: 4vmax 2vmax;
-        background:rgba(32,32,32,0.05);
+        background:rgba(229, 231, 230, 0.98);
         color: #252525;
         h3 {
             padding: 1vw;
