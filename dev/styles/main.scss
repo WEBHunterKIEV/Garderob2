@@ -132,7 +132,7 @@ body {
                 width: 100%;
                 height: 100vh;
                 z-index: 0; 
-                filter: brightness(75%); 
+                filter: brightness(65%); 
                 transition: transform 8s;
             }
             .overlay {
@@ -339,13 +339,13 @@ body {
 
     // how it works?
     #how {
-        background: rgb(32,36,37);
+        //background: rgb(32,36,37);
         padding-top: 5vmax;
         h2 {
             font-weight: 400;
-            text-shadow: 1px 1px 2px black, 0 0 1em rgb(37, 37, 37);
+            //text-shadow: 1px 1px 2px black, 0 0 1em rgb(37, 37, 37);
             font-size: 2.5em;
-            color: orange;
+            color: #403F3B;
             text-align: center;
         }
         h3 {
@@ -360,7 +360,7 @@ body {
                 width: 60vw;
                 height: 25vw;
                 margin-bottom: 5vw;
-                background: rgba(255, 255, 255, 0.116);
+                background: #C0A86A;
                 .how_item1_text {
                     padding: 4vmax 10vw 0 2vmax;
                     color: #F7F7F7;
@@ -380,7 +380,7 @@ body {
             }
             .how_item1_side {
                 margin: -3vw 0 0 -5vw;
-                width: 30vw;
+                width: 50vw;
                 height: auto;
                 background: #F7F7F7;
                 box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
@@ -458,49 +458,39 @@ body {
                 display: flex;
                 position: relative;
                 width: 100%;
-                height: 25vw;
-                margin-bottom: 12vw;
+                height: 20vw;
+                margin-bottom: 13vw;
                 img {
                     width: 33vw;
                     position: absolute;
-                    z-index: 0;
+                    top: 2vw;
+                    right: 10vw;
+                    height: 30vw;
+                    z-index: 3;
                     -webkit-box-shadow: 0px 3px 16px 3px rgba(32,32,32,0.5);
                             box-shadow: 0px 3px 16px 3px rgba(32,32,32,0.5);
                     -webkit-filter: brightness(80%);
                             filter: brightness(80%);
-                    &:first-child {
-                        top: 2vw;
-                        right: 0;
-                        height: 35vw;
-                        z-index: 1;
-                    }
-                    &:last-child {
-                        top: 8vw;
-                        right: 10vw;
-                        width: 40vw;
-                        z-index: 2;
-                    }
                 }
                 .how_item2_text {
                     display: -webkit-box;
                     display: -ms-flexbox;
                     display: flex;
                     width: 60vw;
-                    height: 35vw;
-                    background: rgba(85, 117, 117, 0.98);
-                    -webkit-box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
-                            box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    height: 30vw;
+                    background: rgba(229, 231, 230, 0.98);
                     z-index: 2;
                     .how_item2_text_area {
                         padding: 4vmax 26vw 0 2vmax;
-                        color: #F7F7F7;
+                        color: #252525;
+                        z-index: 3;
                         p {
                             font-size: 1.2em;
                             text-align: justify;
                         }
                         ._3d_button {
                             width: 12vw;;
-                            border: 1px white solid;
+                            border: 1px #252525 solid;
                             padding: .4em;
                             margin: 2vw auto;
                             text-align: center;
@@ -514,6 +504,16 @@ body {
                             z-index: 5;
                         }
                     }
+                }
+                .how_item2_secodBlock {
+                    display: flex;
+                    position: absolute;
+                    top: -3vw;
+                    right: 0;
+                    width: 35vw;
+                    height: 38vw;
+                    background: #C0A86A;
+                    z-index: 0;
                 }
             }
 
@@ -536,9 +536,9 @@ body {
                         z-index: 0;
                     }
                     &:last-child {
-                        left: 25vw;
-                        top: 3vw;
-                        height: 20vw;
+                        left: 26vw;
+                        top: 9vw;
+                        height: 23vw;
                         z-index: 1;
                     }
                 }
@@ -546,13 +546,13 @@ body {
                     display: flex;
                     flex-flow: column nowrap;
                     position: absolute;
-                    top: 6vw;
+                    top: 2vw;
                     right: 0;
-                    width: 30vw;
-                    height: 25vw;
-                    background: rgba(86, 85, 117, 0.98);
-                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
-                    color: #F7F7F7;
+                    width: 35vw;
+                    height: 28vw;
+                    background: rgba(229,231,230,0.98);
+                    //box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    color: #252525;
                     padding: 4vw 3vw 1vw 3vw;
                     z-index: 3;
                     .nom3 {
@@ -580,7 +580,7 @@ body {
                 img {
                     display: flex;
                     position: absolute;
-                    right: 0;
+                    left: 0;
                     width: 40vw;
                     box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
                 }
@@ -589,22 +589,13 @@ body {
                     flex-flow: column nowrap;
                     position: absolute;
                     top: 2vw;
-                    left: 0;
-                    width: 50vw;
+                    right: 0;
+                    width: 60vw;
                     height: 25vw;
-                    background: rgba(85, 117, 100, 0.98);
-                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
-                    color: #F7F7F7;
+                    background: rgba(229, 231, 230, 0.98);
+                    color: #252525;
                     padding: 4vw 3vw 1vw 3vw;
-                    z-index: 3;
-                    .nom4 {
-                        position: absolute;
-                        color: white;
-                        font-size: 10vw;
-                        margin: -15vmax 0 0 20vmax;
-                        text-shadow: 1px 1px 2px black, 0 0 .06em rgb(37, 37, 37);
-                        z-index: 5;
-                    }
+                    z-index: 1;
                     p {
                         font-size: 1.2em;
                         text-align: justify;
@@ -639,9 +630,9 @@ body {
                     display: flex;
                     flex-flow: column nowrap;
                     position: absolute;
-                    background: rgba(117, 117, 85, 0.98);
-                    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
-                    color: #F7F7F7;
+                    background: rgba(229,231,230,0.98);
+                    //box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
+                    color: #252525;
                     left: 20vw;
                     width: 30vw;
                     height: 32vw;
