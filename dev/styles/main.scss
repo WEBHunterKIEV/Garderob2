@@ -284,14 +284,17 @@ body {
                         justify-content: center;
                         position: absolute;
                         padding: 0 2vw;
-                        bottom: -1vw;
+                        bottom: -.7vw;
                         right: 3vw;
                         background: rgba(229,231,230,0.98);
                         cursor: pointer;
-                        img {
-                            width: 2em;
-                            height: 2em;
-                            padding: 0 .1vw;
+                        a {
+                            font-size: 1.1vw;
+                            padding: 0 2vw;
+                            color: rgb(32,36,37);
+                            vertical-align: middle;
+                            text-align: justify;
+                            text-decoration: none;
                         }
                     }
                     .toGalleryBtn_invert {
@@ -584,7 +587,7 @@ body {
                     position: absolute;
                     top: 0;
                     right: 0;
-                    width: 60vw;
+                    width: 61vw;
                     height: 26.6vw;
                     background: rgba(229, 231, 230, 0.98);
                     color: #252525;
