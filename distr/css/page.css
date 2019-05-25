@@ -302,3 +302,67 @@ nav {
         display: flex;
     }
 
+.team_wrap {
+    padding: 5vw 2vw 5vw 2vw;
+}
+    .team_wrap h2 {
+        text-align: center;
+        font-size: 2vw;
+        margin-bottom: 3vw;
+    }
+    .team_top {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+        .team_top li {
+            position: relative;
+            width: 20vw;
+            height: 20vw;
+            overflow: hidden;
+        }
+            .team_top li img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+            .team_name {
+                display: flex;
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                right: 0;
+                padding: .5vw 1vw 0 1vw;
+                background: rgba(0, 0, 0, 0.3);
+            }
+            .team_name a {
+                justify-self: flex-start;
+                height: 100%;
+                width: 3vw;
+                padding: 0;
+                margin: 0;
+            }
+            .team_name a img {
+                position: relative;
+                left: 0;
+                height: 1.5vw;
+                width: 3vw;
+                padding: 0;
+                margin: 0;
+            }
+            .team_name span {
+                width: 100%;
+                font-family: PhillippScript;
+                text-shadow: 1px 1px 6px black, 0 0 1em gray;
+                color: white;
+                text-align: right;
+                font-size: 1.6vw;
+                padding: 0;
+                text-decoration: none;
+            }
+                
+
+
+            /*   */
+
