@@ -310,18 +310,18 @@ nav {
         font-size: 2vw;
         margin-bottom: 3vw;
     }
-    .team_top {
+    .team_top, .team_bottom {
         display: flex;
         justify-content: space-around;
         list-style: none;
     }
-        .team_top li {
+        .team_top li,.team_bottom li {
             position: relative;
             width: 20vw;
             height: 20vw;
             overflow: hidden;
         }
-            .team_top li img {
+            .team_top li img,.team_bottom li img {
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -361,6 +361,18 @@ nav {
                 padding: 0;
                 text-decoration: none;
             }
+
+.team_bottom {
+    justify-content: center;
+}
+    .team_bottom li {
+        margin: 3.5vw 1.5vw 0 1.5vw;
+    }
+        .team_bottom li p {
+            text-align: center;
+            font-size: 1.5vw;
+            padding: .5vw;
+        }
                 
 
 
