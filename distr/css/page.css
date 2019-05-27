@@ -49,6 +49,9 @@ nav {
         border: 2px rgb(98, 101, 102) solid;
         border-radius: 5px;
     }
+    .info_category {
+        flex-flow: row nowrap !important;
+    }
         .info img {
             height: 3.5vw;
             padding: 0 2vw 0 0;
@@ -86,6 +89,8 @@ nav {
             z-index: 1;
         }
         .gallery_slideMain_in {
+            display: flex;
+            align-items: center;
             position: absolute;
             left: -3%;
             top: -20%;
@@ -93,6 +98,24 @@ nav {
             height: 130%;
             box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
         }
+            .gallery_slideMain_in .arrows {
+                position: absolute;
+                width: 3vw;
+                height: 6vw;
+                z-index: 2;
+                opacity: .5;
+                cursor: pointer;
+                transition: all 500ms;
+            }
+            .gallery_slideMain_in .arrows:hover {
+                opacity: .9;
+            }
+                .gallery_slideMain_in .arrows:first-child {
+                    left: 1vw;  
+                }
+                .gallery_slideMain_in .arrows:last-child {
+                    right: 1vw;
+                }
         .gallery_item {
             opacity: .6;
             filter: grayscale(1);
