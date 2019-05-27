@@ -405,6 +405,9 @@ nav {
     padding: 4vw 2vw;
 }
     .project_item {
+       
+        transition: all 3s;
+        filter: brightness(70%);
         min-width: 300px;
         flex-basis: 30vw;
         height: 30vw;
@@ -418,14 +421,81 @@ nav {
             background-size: 40vw;
             background-position-y: bottom;
             background-position-x: 0%;
-            transition: all 3s;
-            filter: brightness(70%);
         }
-        .project_item1:hover {
-            background-position-x: 80%;
+            .project_item1:hover {
+                background-position-x: 50%;
+                background-size: 50vw; 
+            }
+        .project_item2 {
+            background: url("../images/works/garderob2/garderob2-1.jpg");
+            background-size: 30vw;
+            background-position-y: bottom;
+        }
+            .project_item2:hover {
+                background-position-y: top; 
+            }
+        .project_item3 {
+            background: url("../images/works/garderob3/garderob3-1.jpg");
             background-size: 45vw;
+            background-position-y: bottom;
+            background-position-x: 0%;
+        }
+            .project_item3:hover  {
+                background-position-x: 80%;
+                background-size: 50vw; 
+            }
+        .project_item4 {
+            background: url("../images/works/garderob4/garderob4-1.jpg");
+            background-size: 30vw;
+            background-position-y: bottom;
+            background-position-x: 0%;
+        }
+            .project_item4:hover  {
+                background-size: 40vw; 
+            }
+        .project_item5 {
+            background: url("../images/works/garderob5/garderob5-1.jpg");
+            background-size: 30vw;
+            background-position-y: bottom;
+            background-position-x: 0%;
+        }  
+            .project_item5:hover {
+                background-size: 35vw;
+                background-position-x: 50%;
+            }
+        .project_item6 {
+            background: url("../images/works/garderob6/garderob6-1.jpg");
+            background-size: 30vw;
+            background-position-y: top;
+            background-position-x: center;
+        }
+        .project_item6:hover {
+            background-position-y: bottom;
+        }
+        .project_item7 {
+            background: url("../images/works/garderob7/garderob7-1.jpg");
+            background-size: 45vw;
+            background-position-x: left;
+            background-position-y: bottom;
+        }
+            .project_item7:hover {
+                background-position-y: 50%;
+                background-position-x: 50%;
+                background-size: 75vw;
+            }
+        .project_item8 {
+            background: url("../images/works/garderob8/garderob8-1.jpg");
+            background-size: 50vw;
+            background-position-y: 25%;
+        }
+            .project_item8:hover {
+                background-size: 30vw;
+                background-position-y: bottom;
+            }
+        .project_item1:hover {
             filter: brightness(100%);
         }
+        
             .project_item_textInner {
                 display: none;
                 position: absolute;
