@@ -397,7 +397,57 @@ nav {
             padding: .5vw;
         }
                 
-
-
-            /*   */
+/* Projects */
+.projects_wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 4vw 2vw;
+}
+    .project_item {
+        min-width: 300px;
+        flex-basis: 30vw;
+        height: 30vw;
+        background: #252525;
+        margin-top: 2vw;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+        .project_item1 {
+            background: url("../images/works/garderob1/garderob1-1.jpg");
+            background-size: 40vw;
+            background-position-y: bottom;
+            background-position-x: 0%;
+            transition: all 3s;
+            filter: brightness(70%);
+        }
+        .project_item1:hover {
+            background-position-x: 80%;
+            background-size: 45vw;
+            filter: brightness(100%);
+        }
+            .project_item_textInner {
+                display: none;
+                position: absolute;
+                bottom: 0;    
+                padding: 3vw;
+                width: 100%;
+                background: rgba(0,0,0,0.6);
+                color: white;
+            }
+                .project_item_textInner p {
+                    text-shadow: 1px 1px 2px black, 0 0 1em gray;
+                    font-size: .9vw;
+                    padding-bottom: .5vw;
+                }
+                .project_item_textInner button {
+                    margin-top: 1vw;
+                    color: white;
+                    background: none;
+                    border-radius: 5px;
+                    font-size: 1vw;
+                    padding: .2vw .5vw;
+                    cursor: pointer;
+                }
+         
 
