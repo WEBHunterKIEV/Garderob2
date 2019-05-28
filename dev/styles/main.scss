@@ -7,6 +7,10 @@
     font-family: PhillippScript; 
     src: url(../fonts/PhillippScript.ttf);
    }
+@font-face {
+    font-family: Rotis-SansSerif-Std; 
+    src: url(../fonts/Rotis-SansSerif-Std_38713.ttf);
+   }
 * {
     margin: 0;
     padding: 0;
@@ -154,7 +158,7 @@ body {
                 margin: 1vmax;
             }
             h1 {
-                font-family: AGOR; 
+                font-family: Rotis-SansSerif-Std; 
                 text-shadow: 1px 1px 2px black, 0 0 1em gray;
                 font-size: 3em;
                 margin-bottom: 0;
@@ -204,6 +208,7 @@ body {
         padding: 8vmax 2vmax 3vmax 2vmax;
         background: rgba(229,231,230,0.98);
         h2 {
+            font-family: Rotis-SansSerif-Std;
             text-shadow: 1px 1px 2px black, 0 0 1em gray;
         }
         .cat_BG_1 {
@@ -286,20 +291,30 @@ body {
                         padding: 0 2vw;
                         bottom: -.7vw;
                         right: 3vw;
+                        font-size: 1.1vw;
                         background: rgba(229,231,230,0.98);
                         cursor: pointer;
+                        transition: all 500ms;
+                        &:hover {
+                            padding: 0 0vw;
+                            right: 5vw;
+                        }
                         a {
-                            font-size: 1.1vw;
-                            padding: 0 2vw;
                             color: rgb(32,36,37);
+                            padding: 0 2vw;
                             vertical-align: middle;
                             text-align: justify;
                             text-decoration: none;
+                            background: rgba(229,231,230,0.98);
                         }
                     }
                     .toGalleryBtn_invert {
-                        right: unset;
+                        right: unset !important;
                         left: 3vw;
+                        &:hover {
+                            padding: 0 0vw;
+                            left: 5vw;
+                        }
                     }
                 }
             }
@@ -343,16 +358,15 @@ body {
 
     // how it works?
     #how {
-        //background: rgb(32,36,37);
         padding-top: 5vmax;
         h2 {
             font-weight: 400;
-            //text-shadow: 1px 1px 2px black, 0 0 1em rgb(37, 37, 37);
             font-size: 2.5em;
             color: #403F3B;
             text-align: center;
         }
         h3 {
+            font-family: Rotis-SansSerif-Std; 
             font-size: 2.3vw;
             padding-bottom: 2vmax;
         }
@@ -362,10 +376,10 @@ body {
             // item1
             .how_item1 {
                 width: 60vw;
-                height: 25vw;
+                height: min-content;
                 background: #C0A86A;
                 .how_item1_text {
-                    padding: 4vmax 10vw 0 2vmax;
+                    padding: 3vmax 10vw 3vw 2vmax;
                     color: #F7F7F7;
                     p {
                         font-size: 1.2em;
@@ -488,11 +502,11 @@ body {
                     display: -ms-flexbox;
                     display: flex;
                     width: 60vw;
-                    height: 30vw;
+                    height: min-content;
                     background: rgba(229, 231, 230, 0.98);
                     z-index: 2;
                     .how_item2_text_area {
-                        padding: 4vmax 26vw 0 2vmax;
+                        padding: 3vmax 22vw 3vmax 2vmax;
                         color: #252525;
                         z-index: 3;
                         p {
@@ -552,10 +566,10 @@ body {
                     top: 2vw;
                     right: 0;
                     width: 35vw;
-                    height: 28vw;
+                    height: min-content;
                     background: rgba(229,231,230,0.98);
                     color: #252525;
-                    padding: 3vw 2vw 0 2vw;
+                    padding: 3vw 2vw 3vw 2vw;
                     z-index: 3;
                     p {
                         font-size: 1.2em;
@@ -588,10 +602,10 @@ body {
                     top: 0;
                     right: 0;
                     width: 61vw;
-                    height: 26.6vw;
+                    height: min-content;
                     background: rgba(229, 231, 230, 0.98);
                     color: #252525;
-                    padding: 3vw 2vw 0vw 25.5vw;
+                    padding: 3vw 2vw 3vw 26vw;
                     z-index: 1;
                     p {
                         font-size: 1.2em;
@@ -672,10 +686,10 @@ body {
                     top: 3vw;
                     right: 0;
                     width: 60vw;
-                    height: 27.5vw;
+                    height: min-content;
                     background: rgb(192, 168, 106);
                     color: #F7F7F7;
-                    padding: 3vw 2vw 0 25vw;
+                    padding: 3vw 2vw 3vw 25vw;
                     z-index: 0;
                     p {
                         font-size: 1.2em;
@@ -745,7 +759,7 @@ body {
     #question {
         display: flex;
         justify-content: space-around;
-        margin: 0 6vmax 6vmax 6vmax;
+        margin: 6vw;
         .contacts_wrap {
             display: flex;
             flex-flow: column;
@@ -757,6 +771,8 @@ body {
             background:rgba(229, 231, 230, 0.98);
             border-radius: 5px;
             width: 34vw;
+            height: 100% !important;
+            margin-bottom: 0 !important;
             h3 {
                 font-size: 2vw;
             }
