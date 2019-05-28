@@ -405,7 +405,7 @@ nav {
     padding: 4vw 2vw;
 }
     .project_item {
-       
+       position: relative;
         transition: all 3s;
         filter: brightness(70%);
         min-width: 300px;
@@ -415,87 +415,52 @@ nav {
         margin-top: 2vw;
         overflow: hidden;
         border-radius: 5px;
+        transition: all 500ms;
     }
-        .project_item1 {
-            background: url("../images/works/garderob1/garderob1-1.jpg");
-            background-size: 40vw;
-            background-position-y: bottom;
-            background-position-x: 0%;
+    .project_item img {
+        position: absolute;
+        left: 0px;
+        width: 110%;
+        height: 100%;
+        transition: all 8s;
+    }
+
+        .project_item_img_hover0,.project_item_img_hover4 {
+            transform: perspective(500px) translateX(-2vw) scale(1.2, 1.2);
         }
-            .project_item1:hover {
-                background-position-x: 50%;
-                background-size: 50vw; 
-            }
-        .project_item2 {
-            background: url("../images/works/garderob2/garderob2-1.jpg");
-            background-size: 30vw;
-            background-position-y: bottom;
+
+        .project_item2 img,.project_item4 img,.project_item6 img {
+            transform: scale(1.5, 1.5) translateY(-5vw);
         }
-            .project_item2:hover {
-                background-position-y: top; 
-            }
-        .project_item3 {
-            background: url("../images/works/garderob3/garderob3-1.jpg");
-            background-size: 45vw;
-            background-position-y: bottom;
-            background-position-x: 0%;
+        .project_item_img_hover1 {
+            transform: perspective(500px) translateY(5vw) scale(1.5, 1.5) !important;
         }
-            .project_item3:hover  {
-                background-position-x: 80%;
-                background-size: 50vw; 
-            }
-        .project_item4 {
-            background: url("../images/works/garderob4/garderob4-1.jpg");
-            background-size: 30vw;
-            background-position-y: bottom;
-            background-position-x: 0%;
+
+        .project_item3 img {
+            transform: scale(1.2, 1.2);
         }
-            .project_item4:hover  {
-                background-size: 40vw; 
-            }
-        .project_item5 {
-            background: url("../images/works/garderob5/garderob5-1.jpg");
-            background-size: 30vw;
-            background-position-y: bottom;
-            background-position-x: 0%;
-        }  
-            .project_item5:hover {
-                background-size: 35vw;
-                background-position-x: 50%;
-            }
-        .project_item6 {
-            background: url("../images/works/garderob6/garderob6-1.jpg");
-            background-size: 30vw;
-            background-position-y: top;
-            background-position-x: center;
+        .project_item_img_hover2 {
+            transform: perspective(500px) translateX(-5vw) scale(1.2, 1.2) !important;
         }
-        .project_item6:hover {
-            background-position-y: bottom;
+
+        .project_item_img_hover3 {
+            transform: perspective(500px) translateX(5vw) scale(1.5, 1.5) !important;
         }
-        .project_item7 {
-            background: url("../images/works/garderob7/garderob7-1.jpg");
-            background-size: 45vw;
-            background-position-x: left;
-            background-position-y: bottom;
+
+        .project_item_img_hover5 {
+            transform: perspective(500px) translateY(5vw) scale(1.5, 1.5) !important;
         }
-            .project_item7:hover {
-                background-position-y: 50%;
-                background-position-x: 50%;
-                background-size: 75vw;
-            }
-        .project_item8 {
-            background: url("../images/works/garderob8/garderob8-1.jpg");
-            background-size: 50vw;
-            background-position-y: 25%;
+
+        .project_item_img_hover6 {
+            transform: perspective(500px) translateY(3vw) scale(1.7, 1.7) !important;
         }
-            .project_item8:hover {
-                background-size: 30vw;
-                background-position-y: bottom;
-            }
-        .project_item1:hover {
-            filter: brightness(100%);
+
+        .project_item8 img {
+            transform: scale(2,2) translateX(5vw);
         }
-        
+        .project_item_img_hover7 {
+            transform: perspective(500px) translateX(0vw) scale(1, 1) !important;
+        }      
             .project_item_textInner {
                 display: none;
                 position: absolute;
@@ -510,10 +475,13 @@ nav {
                     font-size: .9vw;
                     padding-bottom: .5vw;
                 }
-                .project_item_textInner button {
-                    margin-top: 1vw;
+                .project_item_last_p {
+                    padding-bottom: 1.5vw !important;
+                }
+                .project_item_textInner a {
                     color: white;
                     background: none;
+                    border: 1px solid white;
                     border-radius: 5px;
                     font-size: 1vw;
                     padding: .2vw .5vw;
