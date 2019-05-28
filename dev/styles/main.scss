@@ -155,7 +155,7 @@ body {
             z-index: 3;
             h1,.h1_title,.h1_button {
                 color: white;
-                margin: 1vmax;
+                margin: 1vw;
             }
             h1 {
                 font-family: Rotis-SansSerif-Std; 
@@ -172,10 +172,8 @@ body {
             .h1_button {
                 font-family: AGOR; 
                 text-shadow: 1px 1px 2px black, 0 0 1em gray;
-                font-size: 1.3em;
-                //background-color:rgba(0,0,0,0.4);      
-                padding: .3vmax 1vmax;
-                //border: 2px rgb(98, 101, 102) solid;
+                font-size: 1.3em;     
+                padding: .3vmax 1vw;
                 border: 2px white solid;
                 border-radius:  5%;
                 -webkit-box-shadow: 2px 7px 11px -6px rgba(0,0,0,0.68);
@@ -257,7 +255,7 @@ body {
                 h2 {
                     display: flex;
                     position: absolute;
-                    left: -20vw;
+                    left: -22vw;
                     font-size: 3vmax;
                     color: rgba(229,231,230,0.98);
                     padding: 0 5vmax;
@@ -277,12 +275,12 @@ body {
                         justify-content: center;
                         align-items: center;
                         max-width: 34vw;
-                        font-size: 1.1vw;
-                        padding: 0 2vw;
+                        font-size: 1vw;
+                        padding: 0 1.5vw;
                         color: rgb(32,36,37);
                         vertical-align: middle;
                         text-align: justify;
-                        line-height: 2.2vmax
+                        line-height: 2.1vmax
                     }
                     .toGalleryBtn {
                         display: flex;
@@ -334,6 +332,12 @@ body {
         .cat_item_wrap_invert {
             justify-content: flex-end;
         }
+        @media (max-width: 1000px) {
+            .cat_item_rightSide_innerBox p {
+                line-height: 1.7vmax
+            }
+        }
+
 
         @media (max-width: 769px) {
             .cat_item_rightSide h2 {
@@ -361,14 +365,14 @@ body {
         padding-top: 5vmax;
         h2 {
             font-weight: 400;
-            font-size: 2.5em;
+            font-size: 2.5vw;
             color: #403F3B;
             text-align: center;
         }
         h3 {
             font-family: Rotis-SansSerif-Std; 
             font-size: 2.3vw;
-            padding-bottom: 2vmax;
+            padding-bottom: 2vw;
         }
         .how_item {
             display: flex;
@@ -382,7 +386,7 @@ body {
                     padding: 3vmax 10vw 3vw 2vmax;
                     color: #F7F7F7;
                     p {
-                        font-size: 1.2em;
+                        font-size: 1.2vw;
                         text-align: justify;
                     }
                 }
@@ -398,10 +402,11 @@ body {
                 margin-bottom: 2vw;
                 .how_item1_side_inner {
                     width: 34vw;
+                    overflow: hidden;
                     h5,a {
                         padding-top: 2vmax;
                         color: rgb(32,36,37);
-                        font-size: 1.2em;
+                        font-size: 1.2vw;
                         text-align: center;
                     }
                     a {
@@ -409,6 +414,7 @@ body {
                         padding: 2vw;
                     }
                     input {
+                        font-size: .8vw;
                         width: 11vw;
                         height: 1vw;
                         border: 2px rgb(98, 101, 102) solid;
@@ -434,10 +440,11 @@ body {
                         padding: .2vw;
                         a {
                             display: flex;
+                            font-size: 1.3vw;
                             img {
-                                width: 1.5vmax;
-                                height: 1.3vmax;
-                                padding: .1em .4vmax;
+                                width: 2vw;
+                                height: 1.6vw;
+                                padding: .1vw .4vw;
                             }
                         }
                     }
@@ -506,15 +513,15 @@ body {
                     background: rgba(229, 231, 230, 0.98);
                     z-index: 2;
                     .how_item2_text_area {
-                        padding: 3vmax 22vw 3vmax 2vmax;
+                        padding: 3vw 17vw 3vw 2vw;
                         color: #252525;
                         z-index: 3;
                         p {
-                            font-size: 1.2em;
+                            font-size: 1.2vw;
                             text-align: justify;
                         }
                         ._3d_button {
-                            width: 12vw;;
+                            width: 14vw;;
                             border: 1px #252525 solid;
                             padding: .4em;
                             margin: 2vw auto;
@@ -572,8 +579,7 @@ body {
                     padding: 3vw 2vw 3vw 2vw;
                     z-index: 3;
                     p {
-                        font-size: 1.2em;
-                        text-align: justify;
+                        font-size: 1.2vw;
                     }
                 }
             }
@@ -608,7 +614,7 @@ body {
                     padding: 3vw 2vw 3vw 26vw;
                     z-index: 1;
                     p {
-                        font-size: 1.2em;
+                        font-size: 1.2vw;
                         text-align: justify;
                     }
                 }
@@ -659,7 +665,7 @@ body {
                     padding: 3vw 2vw;
                     z-index: 3;
                     p {
-                        font-size: 1.2em;
+                        font-size: 1.2vw;
                         text-align: justify;
                     }
                 }
@@ -692,11 +698,25 @@ body {
                     padding: 3vw 2vw 3vw 25vw;
                     z-index: 0;
                     p {
-                        font-size: 1.2em;
+                        font-size: 1.2vw;
                         text-align: justify;
                     }
                 }
             }
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .how_item {
+            margin: 8vw 2vw !important;
+        }
+        .how_item1_text p,
+        .how_item2_text p,
+        .how_item3_text p,
+        .how_item4_text p,
+        .how_item5_text p,
+        .how_item6_text p {
+            font-size: 1.5vw;
         }
     }
 
