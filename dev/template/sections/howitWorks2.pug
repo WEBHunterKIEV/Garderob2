@@ -26,5 +26,42 @@
                         p УСТАНОВКb
                         b 6
         h2 Как заказать гардероб ?
+        .how_main_wrap
+            .how_beack_arrow СЮДА
+            // 1 (style="display:none")
+            .how_main_1
+                .item1_textSide
+                    p Вы отправляете форму заявки. С Вами связывается наш специалист, проясняет с Вами все ваши пожелания и размеры изделия.
+                .how_item1_side
+                    .how_item1_side_inner
+                        form
+                            h5 Ваши контакты
+                            .getPhone
+                                input(class="phone" name="phone" type="text" placeholder="телефон")
+                                input(type="text" placeholder="имя")
+                                button(type="submit") 
+                                    img(src="images/forward-arrow.svg" alt="btn")
+                        h5 Или позвоните нам:
+                        .garderob_phones
+                            a(href="tel:+380504111176") 
+                                img(src="images/how/telephone.png")
+                                p 050 411 1176
+                            a(href="tel:+380975996460") 
+                                img(src="images/how/telephone.png")
+                                p 097 599 6460
+                        .massangers 
+                            a(href="#")
+                                p(style="color:#663398") Viber
+                                img(src="images/viber.png")
+                            a(href="#")
+                                p(style="color:#2BA2DB") Telegram
+                                img(src="images/teleg.png")
+                            a(href="#")
+                                p(style="color:#00CC33") WhatsAPP
+                                img(src="images/whatsapp.png")
+                        .garderob_mail
+                            a(href="mailto:vlad@htmlbook.ru") Задавайте вопросы по электронной почте info@garderob.kiev.ua
+                                img(src="images/mail.png", alt="mail")
+            .how_next_arrow ТУДА
 section#how
     

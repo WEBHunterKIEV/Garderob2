@@ -24,7 +24,7 @@ body {
         height: 100%;
         min-height: 70vw;
         z-index: 0;
-        filter: blur(3px) brightness(50%);
+        filter: blur(3px) brightness(50%) opacity(95%);
     }
     nav {
         position: fixed;
@@ -373,14 +373,13 @@ body {
     // how it works? // background: #F7F7F7;
     .paralaks {
         padding-top: 10vmax;
-        height: 140vh;
+        //height: 140vh;
         background: transparent;
         h2 {
             font-weight: 400;
             font-size: 2.5vw;
             color: #dfdfdf;
             text-align: center;
-            margin-bottom: 20vmin;
             z-index: 1;
             position: relative;
             text-shadow: 1px 1px 2px black, 0 0 1em grey;
@@ -403,8 +402,8 @@ body {
                 top: -5vw;
                 .how_statusLine_item_wrap {
                     position: relative;
-                    -webkit-perspective: 800px;
-                            perspective: 800px;
+                    -webkit-perspective: 1100px;
+                            perspective: 1100px;
                     -webkit-transform-style: preserve-3d;
                             transform-style: preserve-3d;
                     width: 20vw;
@@ -419,7 +418,6 @@ body {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background: transparent;
                         background: rgba(255, 255, 255, 0.17);
                         border: 2px rgb(98, 101, 102) solid;
                         border-radius: 1%;
@@ -442,14 +440,49 @@ body {
                             text-shadow: 1px 1px 2px black, 0 0 1em grey;
                             z-index: 4;
                             font-weight: 600;
+                            opacity: 1;
+                            transition: all 800ms;
                         }
                         b {
                             position: absolute;
                             font-size: 15vw;
                             z-index: 3;
                             opacity: .15;
+                            transition: all 800ms;
                         }
                     }
+                }
+            }
+        }
+        .how_main_wrap {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin: 10vmin;
+            padding: 0 5vw;
+            min-height: 70vh;
+            .how_next_arrow,
+            .how_beack_arrow {
+                position: absolute;
+                color: #F7F7F7;
+            }
+            .how_next_arrow {
+                right: 5vw;
+            }
+            .how_beack_arrow {
+                left: 5vw;
+            }
+            .how_main_1 {
+                display: flex;
+                flex-flow: row nowrap;
+                width: 100%;
+                justify-content: space-around;
+                .item1_textSide {
+                    width: 40vw;
+                    color: #dfdfdf;
+                    font-size: 1.4vw;
+                    position: relative;
+                    text-shadow: 1px 1px 2px black, 0 0 1em grey;
                 }
             }
         }
@@ -462,7 +495,9 @@ body {
         .how_item_wrap {
             width: 100%;
             height: 100%;
-            
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -1072,5 +1107,98 @@ body {
             padding: 1vw;
         }
     }
+}
+
+/* contacts */
+.how_item1_side {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    min-width: 500px;
+    background: rgba(229, 231, 230, 0.98);
+    box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
+    z-index: 99;
+    position: relative;
+    .how_item1_side_inner {
+        width: 34vw;
+        overflow: hidden;
+        h5,a {
+            padding-top: 2vmax;
+            color: rgb(32,36,37);
+            font-size: 1.2vw;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            padding: 2vw;
+        }
+        input {
+            font-size: .8vw;
+            width: 11vw;
+            height: 1vw;
+            border: 2px rgb(98, 101, 102) solid;
+            border-radius: 5px;
+            padding: .8vw;
+        }
+        .getPhone,.garderob_phones,.garderob_mail {
+            display: flex;
+            justify-content: space-around;
+            padding: 1vw 2vw;
+            button {
+                height: auto;
+                width: 2vw;
+                border: 2px rgb(98, 101, 102) solid;
+                border-radius: 5px;
+                cursor: pointer;
+                img {
+                    height: 1vw;
+                }
+            }
+        }
+        .garderob_phones {
+            padding: .2vw;
+            a {
+                display: flex;
+                font-size: 1.3vw;
+                img {
+                    width: 2vw;
+                    height: 1.6vw;
+                    padding: .1vw .4vw;
+                }
+            }
+        }
+        .garderob_mail {
+            text-align: justify;
+            font-size: .8em;
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 2vw;
+                    margin: .5vw;
+                }
+            }
+        }
+        .massangers {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            a {
+                padding: 1vw;
+                width: 7vw;
+                filter: grayscale(90%);
+                transition: all 500ms;
+                font-size: .8vw;
+                &:hover {
+                    filter: grayscale(0%);
+                }
+            }
+            img {
+                width: 2vw;
+            }
+        }
+    }
+
 }
 
