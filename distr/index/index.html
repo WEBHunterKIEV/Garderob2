@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="css/main.css"/>
-    <script src="js/lib/jquery.min.js"></script>
-    <script src="js/lib/jquery.inputmask.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/page.css"/>
     <title>Гардеробные комнаты под заказ</title>
   </head>
-  <body><img class="sub_BG" src="images/cat/cat1.jpg" alt="sub_BG"/>
+  <body>
     <header>
       <nav>
         <div class="nav_logo_wrap"> 
@@ -72,44 +70,122 @@
           </div>
         </div>
       </section>
-      <div class="paralaks">
-        <div class="how_statusLine">
-          <div class="how_statusLine_wrap">
-            <div class="how_statusLine_item_wrap">
-              <div class="how_statusLine_item">
-                <p>ЗАЯВКА</p><b>1</b>
-              </div>
+      <section id="how">
+        <h2>Как заказать гардероб ?</h2>
+        <div class="how_item">
+          <div class="how_item1">
+            <div class="how_item1_text">
+              <!--p.nom 1 -->
+              <h3>Заявка</h3>
+              <p>Вы отправляете форму заявки. С Вами связывается наш специалист, проясняет с Вами все ваши пожелания и размеры изделия.</p>
             </div>
-            <div class="how_statusLine_item_wrap">
-              <div class="how_statusLine_item">
-                <p>3D ПРЕКТ</p><b>2</b>
-              </div>
-            </div>
-            <div class="how_statusLine_item_wrap">
-              <div class="how_statusLine_item">
-                <p>ЗАМЕР</p><b>3</b>
-              </div>
-            </div>
-            <div class="how_statusLine_item_wrap">
-              <div class="how_statusLine_item">
-                <p>ДОГОВОР</p><b>4</b>
-              </div>
-            </div>
-            <div class="how_statusLine_item_wrap">
-              <div class="how_statusLine_item">
-                <p>ИЗГОТОВЛЕНИЕ</p><b>5</b>
-              </div>
-            </div>
-            <div class="how_statusLine_item_wrap">
-              <div class="how_statusLine_item">
-                <p>УСТАНОВКb</p><b>6</b>
-              </div>
+          </div>
+          <div class="how_item1_side">
+            <div class="how_item1_side_inner">
+              <form>
+                <h5>Ваши контакты</h5>
+                <div class="getPhone">
+                  <input class="phone" name="phone" type="text" placeholder="телефон"/>
+                  <input type="text" placeholder="имя"/>
+                  <button type="submit"> <img src="images/forward-arrow.svg" alt="btn"/></button>
+                </div>
+              </form>
+              <h5>Или позвоните нам:</h5>
+              <div class="garderob_phones"><a href="tel:+380504111176"> <img src="images/how/telephone.png"/>
+                  <p>050 411 1176</p></a><a href="tel:+380975996460"> <img src="images/how/telephone.png"/>
+                  <p>097 599 6460</p></a></div>
+              <div class="massangers"> <a href="#">
+                  <p style="color:#663398">Viber</p><img src="images/viber.png"/></a><a href="#">
+                  <p style="color:#2BA2DB">Telegram</p><img src="images/teleg.png"/></a><a href="#">
+                  <p style="color:#00CC33">WhatsAPP</p><img src="images/whatsapp.png"/></a></div>
+              <div class="garderob_mail"><a href="mailto:vlad@htmlbook.ru">Задавайте вопросы по электронной почте info@garderob.kiev.ua<img src="images/mail.png" alt="mail"/></a></div>
             </div>
           </div>
         </div>
-        <h2>Как заказать гардероб ?</h2>
+        <div class="how_item">
+          <div class="how_item2"><img src="/images/how/sheme3.jpg" alt="схема гардероба3"/>
+            <div class="how_item2_text">
+              <div class="how_item2_text_area">
+                <h3>Индивидуальный 3D проект</h3>
+                <p>С учетом всех Ваших пожеланий мы создаем 3-D проект. И только, после утверждения проекта мы делаем детальную смету.</p>
+                <p class="_3d_button">Пример проекта</p>
+              </div>
+            </div>
+            <div class="how_item2_secodBlock"></div>
+          </div>
+        </div>
+        <div class="how_item">
+          <div class="how_item3"><img src="images/how/zamer1.jpg"/>
+            <div class="how_item3_text">
+              <h3>Высокоточный замер</h3>
+              <p>После согласования стоимости и проекта к Вам выезжает замерщик. Замер производится при помощи рулетки, нивелира, электронного дальномера, угломера и планшета. </p>
+            </div><img src="images/how/zamer2.jpg"/>
+          </div>
+        </div>
+        <div class="how_item">
+          <div class="how_item4">
+            <div class="how_item4_secodBlock"></div>
+            <div class="how_item4_text">
+              <h3>Заключение договора</h3>
+              <p>Что входит в договор? Договор, Спецификация материалов, Чертежи с размерами. После подписания всей документации и внесения предоплаты 80% договор вступает в силу.</p>
+            </div><img src="images/how/dogovor.jpg"/>
+          </div>
+        </div>
+        <div class="how_item">
+          <div class="how_item5"><img src="images/how/dev1.jpg"/>
+            <div class="how_item5_text">
+              <h3>Изготовление</h3>
+              <p>Выбранные материалы обрабатываются на дорогом высокоточном оборудование и проходит двойной контроль качества. После упаковывается и доставляется на адрес для установки.</p>
+            </div><img src="images/how/dev2.jpg"/>
+          </div>
+        </div>
+        <div class="how_item">
+          <div class="how_item6"><img src="images/how/done2.jpg"/>
+            <div class="how_item6_text">
+              <h3>Установка</h3>
+              <p>Перед доставкой с Вами связывается ответственное лицо и согласовывает время и дату установки.После установки подписывается акт выполненных работ и с этого момента вступает в силу гарантийные обязательства. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="gallery">
+          <h2>Примеры наших работ</h2>
+          <div class="gallery_wrap">
+            <div class="gallery_slideMain">
+              <div class="gallery_slideMain_in">
+                  <img class="mainFoto" src="../images/page/gallery/1.jpg" alt="garderob_foto">
+                  <img class="arrow_beak" src="../images/page/gallery/left.png" alt="arrow">
+                  <img class="arrow_next" src="../images/page/gallery/right.png" alt="arrow">
+              </div>
+            </div>
+            <div class="gallery_item gallery_active">
+                <img src="../images/page/gallery/1.jpg" alt="garderob_foto">
+            </div>
+            <div class="gallery_item">
+              <img src="../images/page/gallery/2.jpg" alt="garderob_foto">
+            </div>
+            <div class="gallery_item">
+              <img src="../images/page/gallery/3.jpg" alt="garderob_foto">
+            </div>
+            <div class="gallery_item">
+              <img src="../images/page/gallery/4.jpg" alt="garderob_foto">
+            </div>
+            <div class="gallery_item">
+              <img src="../images/page/gallery/5.jpg" alt="garderob_foto">
+            </div>
+            <div class="gallery_item">
+              <img src="../images/page/gallery/66.jpg" alt="garderob_foto">
+            </div>
+            <div class="gallery_item">
+              <img src="../images/page/gallery/7.jpg" alt="garderob_foto">
+            </div>
+            <div class="gallery_item">
+              <img src="../images/page/gallery/8.jpg" alt="garderob_foto">
+            </div>
+          </div>
       </div>
-      <section id="how"></section>
+
       <section id="question">
         <div class="contacts_wrap"> 
           <h3>Готовы заказать?</h3>
@@ -189,92 +265,10 @@
       <div class="copyRight"> 
         <p>Copyright &copy GARDEROB.KIEV.UA 2019 </p>
       </div>
-      <section id="how">
-        <h2>Как заказать гардероб ?</h2>
-        <div class="how_item">
-          <div class="how_item1">
-            <div class="how_item1_text">
-              <!--p.nom 1 -->
-              <h3>Заявка</h3>
-              <p>Вы отправляете форму заявки. С Вами связывается наш специалист, проясняет с Вами все ваши пожелания и размеры изделия.</p>
-            </div>
-          </div>
-          <div class="how_item1_side">
-            <div class="how_item1_side_inner">
-              <form>
-                <h5>Ваши контакты</h5>
-                <div class="getPhone">
-                  <input class="phone" name="phone" type="text" placeholder="телефон"/>
-                  <input type="text" placeholder="имя"/>
-                  <button type="submit"> <img src="images/forward-arrow.svg" alt="btn"/></button>
-                </div>
-              </form>
-              <h5>Или позвоните нам:</h5>
-              <div class="garderob_phones"><a href="tel:+380504111176"> <img src="images/how/telephone.png"/>
-                  <p>050 411 1176</p></a><a href="tel:+380975996460"> <img src="images/how/telephone.png"/>
-                  <p>097 599 6460</p></a></div>
-              <div class="massangers"> <a href="#">
-                  <p style="color:#663398">Viber</p><img src="images/viber.png"/></a><a href="#">
-                  <p style="color:#2BA2DB">Telegram</p><img src="images/teleg.png"/></a><a href="#">
-                  <p style="color:#00CC33">WhatsAPP</p><img src="images/whatsapp.png"/></a></div>
-              <div class="garderob_mail"><a href="mailto:vlad@htmlbook.ru">Задавайте вопросы по электронной почте info@garderob.kiev.ua<img src="images/mail.png" alt="mail"/></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="how_item">
-          <div class="how_item2"><img src="/images/how/sheme3.jpg" alt="схема гардероба3"/>
-            <div class="how_item2_text">
-              <div class="how_item2_text_area">
-                <h3>Индивидуальный 3D проект</h3>
-                <p>С учетом всех Ваших пожеланий мы создаем 3-D проект. И только, после утверждения проекта мы делаем детальную смету.</p>
-                <p class="_3d_button">Пример проекта</p>
-              </div>
-            </div>
-            <div class="how_item2_secodBlock"></div>
-          </div>
-        </div>
-        <div class="how_item">
-          <div class="how_item3"><img src="images/how/zamer1.jpg"/>
-            <div class="how_item3_text">
-              <h3>Высокоточный замер</h3>
-              <p>После согласования стоимости и проекта к Вам выезжает замерщик. Замер производится при помощи рулетки, нивелира, электронного дальномера, угломера и планшета. </p>
-            </div><img src="images/how/zamer2.jpg"/>
-          </div>
-        </div>
-        <div class="how_item">
-          <div class="how_item4">
-            <div class="how_item4_secodBlock"></div>
-            <div class="how_item4_text">
-              <h3>Заключение договора</h3>
-              <p>Что входит в договор? Договор, Спецификация материалов, Чертежи с размерами. После подписания всей документации и внесения предоплаты 80% договор вступает в силу.</p>
-            </div><img src="images/how/dogovor.jpg"/>
-          </div>
-        </div>
-        <div class="how_item">
-          <div class="how_item5"><img src="images/how/dev1.jpg"/>
-            <div class="how_item5_text">
-              <h3>Изготовление</h3>
-              <p>Выбранные материалы обрабатываются на дорогом высокоточном оборудование и проходит двойной контроль качества. После упаковывается и доставляется на адрес для установки.</p>
-            </div><img src="images/how/dev2.jpg"/>
-          </div>
-        </div>
-        <div class="how_item">
-          <div class="how_item6"><img src="images/how/done2.jpg"/>
-            <div class="how_item6_text">
-              <h3>Установка</h3>
-              <p>Перед доставкой с Вами связывается ответственное лицо и согласовывает время и дату установки.После установки подписывается акт выполненных работ и с этого момента вступает в силу гарантийные обязательства. </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="gallery_small"> 
-        <div class="gallery_small_wrap">
-          <div class="gallery_small_item"><img src="images/gallery/slide3.jpg"/></div>
-          <div class="gallery_small_item"><img src="images/gallery/slide4.jpg"/></div>
-          <div class="gallery_small_item"><img src="images/gallery/slide5.jpg"/></div>
-          <div class="gallery_small_item"><img src="images/gallery/slide6.jpg"/></div>
-        </div>
-      </section>
     </main>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/jquery.inputmask.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/WBH_slider.js"></script>
   </body>
 </html>
