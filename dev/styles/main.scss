@@ -451,6 +451,15 @@ body {
                             transition: all 800ms;
                         }
                     }
+                    .how_main_active {
+                        p {
+                            opacity: 0;
+                        }
+                        b {
+                            opacity:.4;
+                            color: #ffffffbd;
+                        }
+                    }
                 }
             }
         }
@@ -472,8 +481,11 @@ body {
             .how_beack_arrow {
                 left: 5vw;
             }
+
+            // 1
+
             .how_main_1 {
-                display: flex;
+                display: none;
                 flex-flow: row nowrap;
                 width: 100%;
                 justify-content: space-around;
@@ -485,6 +497,37 @@ body {
                     text-shadow: 1px 1px 2px black, 0 0 1em grey;
                 }
             }
+
+            // 3
+            .how_main_3 {
+                flex-flow: column nowrap;
+                div {
+                    width: 100% !important;
+                }
+                .how_item1_side {
+                    background: none;
+                    box-shadow: none;
+                    display: flex;
+                    justify-content: space-around;
+                    img {
+                        box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
+                    }
+                }
+            }
+
+            .how_main_display {
+                display: flex !important;
+                .how_item1_side_4 {
+                    text-align: center;
+                    padding: 5vw;
+                    img{
+                        width: 50vw;
+                        position: relative;
+                    }
+                }
+            }
+
+
         }
     }
     #how {
@@ -500,7 +543,7 @@ body {
             align-items: center;
         }
     }
-
+/*
     // how it works?
     #how {
         //padding-top: 5vmax;
@@ -908,7 +951,7 @@ body {
         }
     }
     
-
+*/
 
     // question ?
     #question {
@@ -1108,6 +1151,8 @@ body {
         }
     }
 }
+
+
 
 /* contacts */
 .how_item1_side {
