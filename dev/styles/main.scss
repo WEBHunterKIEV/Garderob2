@@ -494,6 +494,7 @@ body {
                     color: #dfdfdf;
                     font-size: 1.4vw;
                     position: relative;
+                    padding: 1vmin;
                     text-shadow: 1px 1px 2px black, 0 0 1em grey;
                 }
             }
@@ -501,20 +502,22 @@ body {
             // 3
             .how_main_3 {
                 flex-flow: column nowrap;
-                div {
-                    width: 100% !important;
+                .item1_textSide {
+                    width: 80%;
+                    margin: 0 auto;
                 }
                 .how_item1_side {
                     background: none;
                     box-shadow: none;
                     display: flex;
                     justify-content: space-around;
+                    width: 100%;
                     img {
                         box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
                     }
                 }
             }
-
+            // 4
             .how_main_display {
                 display: flex !important;
                 .how_item1_side_4 {
@@ -526,8 +529,37 @@ body {
                     }
                 }
             }
-
-
+            // 5
+            .how_main_5 {
+                height: min-content;
+                flex-flow: column nowrap;
+                .item1_textSide {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                .how_item1_side_5 {
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    img {
+                        position: absolute;
+                        box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
+                        margin-top: 5vmin;
+                        &:first-child {
+                            left: 0;
+                            z-index: 10;
+                            top: 5vmin;
+                        }
+                        &:last-child {
+                            right: 0;
+                            z-index: 5;
+                            width: 50vw;
+                            filter: brightness(70%);
+                        }
+                    }
+                }
+            }
         }
     }
     #how {
