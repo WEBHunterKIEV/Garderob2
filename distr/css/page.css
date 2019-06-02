@@ -37,7 +37,10 @@ nav {
 }
 
 
-/* new gallery */
+
+
+
+/* new gallery 
 .gallery {
     background: rgba(229,231,230,0.98);
     padding: 3vw 0; 
@@ -144,11 +147,13 @@ nav {
         cursor: unset;
     }
 
-/* gallery 
-
+/* gallery */
+/*
 .gallery {
     background: rgba(229,231,230,0.98);
     padding-top: 3vw; 
+    position: relative;
+    z-index: 20;
 }
     .info {
         display: flex;
@@ -268,7 +273,7 @@ nav {
         .gallery_item9 {
             background: url(../images/page/gallery/7.jpg);
         }
-*/
+
 /* header  contacts  */
 .contacts_wrap {
     display: flex;
