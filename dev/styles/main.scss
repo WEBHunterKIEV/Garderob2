@@ -572,6 +572,7 @@ body {
                     width: 100%;
                     img {
                         box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.5);
+                        width: 100%;
                     }
                 }
             }
@@ -716,7 +717,7 @@ body {
             min-width: 300px;
             position: relative;
             form {
-                position: absolute;
+                position: relative;
                 width: 100%;
                 height: 100%;
                 padding: 2vw;
@@ -731,6 +732,7 @@ body {
                 }
                 .inputs {
                     display: flex;
+                    flex-flow: column nowrap;
                     justify-content: space-between;
                     input {
                         position: relative;                            
@@ -751,7 +753,7 @@ body {
                 }                    
                 .textarea {
                     width: calc(100% - 2vw);
-                    height: 55%;
+                    height: 20vmin;
                     margin: 1vw;
                     padding: .8vw;
                     border: 2px rgb(98, 101, 102) solid;
@@ -759,6 +761,7 @@ body {
                     box-shadow: inset 3px 3px 8px -6px rgba(0,0,0,0.63);
                 }
                 button {
+                    position: relative;
                     background: #252525;
                     color: orange;
                     padding: .5vw;
@@ -778,7 +781,6 @@ body {
                         display: none;
                     }
                     .inputs {
-                        flex-flow: column;
                         input {
                             width: 100%;
                             margin: .5vmin 0;
@@ -790,6 +792,7 @@ body {
                     .textarea {
                         margin: .5vw 0;
                         width: 100%;
+                        height: 30vmin;
                     }
                 }
             }
@@ -806,7 +809,7 @@ body {
             .question_wrap {
                 margin: 0 auto 5vmin auto !important;
                 width: 95vmin;
-                min-height: 100vw;
+                padding: 5vmin 0;
                 form {
                     h5 {
                         font-size: 6vmin !important;
@@ -818,82 +821,41 @@ body {
                     }
                     .textarea {
                         font-size: 6vmin;
+                        height: 80vmin;
                     } 
                     button {
                         font-size: 6vmin;
                         padding: 2vmin;
+                        margin-bottom: 5vmin;
                     }
                 }
             }
         }
     }
-    /*
-    @media (max-width: 769px) {
-        .how_item1_side {
-            margin: 0 auto 5vmin auto !important;
-            width: 95vmin;
-            .how_item1_side_inner {
-                width: 100%;
-                h5 {
-                    font-size: 6vmin !important;
-                }
-                .getPhone {
-                    button {
-                        height: 10vmin;
-                    }
-                    input {
-                        font-size: 6vmin;
-                    }
-                }
-                .garderob_phones {
-                    a {
-                        width: 50%;
-                        display: flex;
-                        justify-content: center;
-                        font-size: 6vmin;
-                        img {
-                            height: 6vmin;
-                            width: 6vmin;
-                        }
-                    }
-                }
-                .massangers a {
-                    width: 33%;
-                    p {
-                        font-size: 3vmin;
-                    }
-                    img {
-                        width: 65% !important;
-                    }
-                }
-                .garderob_mail {
-                    a {
-                        font-size: 4vmin;
-                        img {
-                            height: 6vmin;
-                            width: 8vmin;
-                        }
-                    }
-                }
-            }
-        }
-    }*/
-
-
-
 
 
 
     // footer
     footer {
         display: flex;
+        position: relative;
         justify-content: space-around;
         padding: 4vmax 2vmax;
         background:rgba(229, 231, 230, 0.98);
         color: #252525;
+        .footer_map {
+            width: 100%;
+            h3 {
+                font-size: 2.5vmin;
+            }
+            img {
+                width: 100% !important;
+            }
+        }
         h3 {
             padding: 1vw;
             text-align: center;
+            font-size: 2.5vmin;
         }
         p {
             color: #2525257e;
@@ -908,6 +870,7 @@ body {
             display: flex;
             flex-direction: column;
             width: 100%;
+            min-width: 600px;
             .footer_main_top {
                 display: flex;
                 height: 15vw;
@@ -930,6 +893,7 @@ body {
     }
     .copyRight {
         display: flex;
+        position: relative;
         justify-content: center;
         background: #252525;
         p {
@@ -938,7 +902,38 @@ body {
         }
     }
 }
-
+@media (max-width: 1300px) {
+    .footer_main_bottom {
+        font-size: 2vmin !important;
+    }
+}
+@media (max-width: 1024px) {
+    footer {
+        h3 {
+            font-size: 4vmin !important;
+        }
+        .footer_main {
+            .footer_main_top {
+                flex-flow: column;
+                height: unset !important;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    footer {
+        flex-flow: column nowrap;
+        h3 {
+            font-size: 6vmin !important;
+        }
+        p {
+            font-size: 4vmin !important;
+        }
+        .footer_main {
+            min-width: unset !important;
+        }
+    }
+}
 
 
 
@@ -1003,11 +998,11 @@ body {
         }
         .garderob_mail {
             text-align: justify;
-            font-size: .8em;
             a {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                font-size: 2vmin;
                 img {
                     width: 2vw;
                     margin: .5vw;
