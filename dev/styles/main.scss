@@ -1268,4 +1268,62 @@ body {
     }
 }
 
+// pages
+
+// category
+/*
+.gallery {
+    background: rgba(229,231,230,0.98);
+    padding-top: 3vw; 
+    position: relative;
+    z-index: 20;
+    .info {
+        display: flex;
+        width: 80vw;
+        margin: 0 auto;
+        padding: 2vw 2vw;
+        border: 2px rgb(98, 101, 102) solid;
+        border-radius: 5px;
+    }
+    .info_category {
+        flex-flow: row nowrap !important;
+        .info img {
+            height: 3.5vw;
+            padding: 0 2vw 0 0;
+        }
+        .info p {
+            font-size: 1vw;
+            text-align: justify;
+        }
+    }
+}
+*/
+.gallery {
+    background: rgba(229,231,230,0.98);
+    padding-top: 3vw; 
+    position: relative;
+    z-index: 20;
+}
+    .info {
+        display: flex;
+        width: 80vw;
+        margin: 0 auto;
+        padding: 2vw 2vw;
+        border: 2px rgb(98, 101, 102) solid;
+        border-radius: 5px;
+    }
+    .info_category {
+        flex-flow: row nowrap !important;
+    }
+        .info img {
+            height: 3.5vw;
+            padding: 0 2vw 0 0;
+        }
+        .info p {
+            font-size: 1vw;
+            text-align: justify;
+        }
+    
+        
+
 
