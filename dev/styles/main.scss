@@ -547,6 +547,7 @@ body {
                 flex-flow: row nowrap;
                 width: 100%;
                 justify-content: space-around;
+                opacity: 0;
                 .item1_textSide {
                     width: 40vw;
                     color: #dfdfdf;
@@ -579,6 +580,8 @@ body {
             // 4
             .how_main_display {
                 display: flex !important;
+                opacity: 1;
+                transition: all 500ms;
                 .how_item1_side_4 {
                     text-align: center;
                     padding: 5vw;
