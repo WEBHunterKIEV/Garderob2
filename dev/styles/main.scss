@@ -273,6 +273,7 @@ body {
             }
             .blog_title {
                 font-size: 3vw;
+                max-width: 80vw;
                 color: white;
                 text-align: center;
                 z-index: 99;
@@ -731,7 +732,8 @@ body {
                         height: 40vw;
                     }
                     // 4
-                    .how_item1_side_4 {
+                    .how_item1_side_4,
+                    #how_img_2 {
                         padding: 0 !important;
                         padding-bottom: 3vw;
                         img {
@@ -926,11 +928,12 @@ body {
                     }
                     .inputs {
                         input {
-                            font-size: 4vw;
+                            font-size: 6vw;
+                            padding: 2vw 1vw;
                         }
                     }
                     .textarea {
-                        font-size: 4vw;
+                        font-size: 6vw;
                         height: 70vw;
                     } 
                     button {
@@ -1251,6 +1254,21 @@ body {
         }
     }
 }
+@media (max-width: 769px) {
+    .how_item1_side {
+        .how_item1_side_inner {
+            h5 {
+                font-size: 6vw !important;
+            }
+            .getPhone input {
+                padding: 1vw 2vw;
+            }
+            .garderob_phones  {
+                padding: 8vw 0 !important;
+            }
+        }
+    } 
+}
 
 
 
@@ -1501,3 +1519,219 @@ body {
         }
     }
 }
+/* about */
+.main_about {
+    padding: 2vw;
+    .info {
+        display: flex;
+        flex-flow: column;
+        .info_wrap {
+            display: flex;
+        }
+        h3 {
+            padding: 2vw;
+            text-align: center;
+            font-size: 2vw;
+        }
+        .advantage_list {
+            display: flex;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            list-style: none;
+            li {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                width: 10vw;
+                min-width: 140px;
+                min-height: 130px;
+                p {
+                    font-size: .8vw;
+                    opacity: .8;
+                    padding: 1vw;
+                    text-align: center;
+                }
+                img {
+                    padding: unset;
+                }
+            }
+        }
+    }
+    .team_wrap {
+        padding: 5vw 2vw 5vw 2vw;
+        h2 {
+            text-align: center;
+            font-size: 2vw;
+            margin-bottom: 3vw;
+        }
+        .team_top, 
+        .team_bottom {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            list-style: none;
+        }
+        .team_top li,
+        .team_bottom li {
+            position: relative;
+            width: 20vw;
+            min-width: 320px;
+            height: 20vw;
+            min-height: 320px;
+            margin-bottom: 5vw;
+            overflow: hidden;
+            .team_name {
+                display: flex;
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                right: 0;
+                padding: .5vw 1vw 0 1vw;
+                background: rgba(0, 0, 0, 0.3);
+                span {
+                    width: 100%;
+                    font-family: PhillippScript;
+                    text-shadow: 1px 1px 6px black, 0 0 1em gray;
+                    color: white;
+                    text-align: right;
+                    font-size: 1.6vw;
+                    padding: 0;
+                    text-decoration: none;
+                }
+                a {
+                    justify-self: flex-start;
+                    height: 100%;
+                    width: 3vw;
+                    padding: 0;
+                    margin: 0;
+                    img {
+                        position: relative;
+                        left: 0;
+                        height: 1.5vw;
+                        width: 3vw;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .team_top li img,
+        .team_bottom li img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+        .team_bottom {
+            justify-content: center;
+            li {
+                margin: 3.5vw 1.5vw 0 1.5vw;
+                p {
+                    text-align: center;
+                    font-size: 1.5vw;
+                    padding: .5vw;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1300px) {
+    .main_about {
+        .info {
+            width: 100%;
+            p {
+                font-size: 1.5vw;
+            }
+            .advantage_list li {    
+                width: 20vw;
+                height: unset;
+                img {
+                    height: 7vw;
+                }
+                p {
+                    font-size: 1.3vw;
+                }
+            }
+        } 
+    }
+}
+@media (max-width: 1024px) {
+    .main_about {
+        .info {
+            h3 {
+                font-size: 4vw;
+            }
+            p {
+                font-size: 2vw;
+            }
+            .advantage_list li {    
+                width: 20vw;
+                img {
+                    height: 7vw;
+                }
+                p {
+                    font-size: 1.7vw;
+                }
+            }
+        }
+        .team_wrap {
+            h2 {
+                font-size: 4vw;
+            }
+            .team_top,
+            .team_bottom {
+                li {
+                    p {
+                        font-size: 150%;
+                    }
+                    .team_name {
+                        span {
+                            font-size: 185%;
+                        }
+                        a img {
+                            width: 200% !important;
+                            min-width: 55px !important;
+                            height: 200% !important;
+                            min-height: 27px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 769px) {
+    .main_about {
+        .info {
+            h3 {
+                font-size: 6vw;
+            }
+            p {
+                font-size: 4vw;
+            }
+            .advantage_list li {
+                width: 40vw;
+                p {
+                    font-size: 3vw;
+                }
+                img {
+                    height: 15vw;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

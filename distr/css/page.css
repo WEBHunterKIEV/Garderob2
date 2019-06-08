@@ -403,7 +403,7 @@ nav {
 }
 */
 
-/* about */
+/* about 
 .main_about {
     padding: 2vw;
 }
@@ -514,7 +514,7 @@ nav {
             font-size: 1.5vw;
             padding: .5vw;
         }
-                
+      */          
 /* Projects */
 .projects_wrap {
     display: flex;
