@@ -701,7 +701,10 @@ body {
             background-size: cover;
             background-position: center;
             h2 {
-                font-size: 5vw;
+                font-size: 6vw;
+            }
+            .how_title_wrap h2 {
+                font-size: 6vw;
             }
             .how_statusLine {
                 width: 95vw;
@@ -715,9 +718,9 @@ body {
                 .how_main_display {
                     flex-flow: column !important;
                     .item1_textSide {
-                        font-size: 2.5vw !important;
+                        font-size: 4vw !important;
                         width: 90% !important;
-                        margin: 0 auto;
+                        margin: 1vw auto;
                     }
                     .how_item1_side {
                         margin: 5vw auto;
@@ -797,7 +800,7 @@ body {
             width: 35vw;
             min-width: 320px;
             max-width: 500px;
-            height: max-content;
+            height: 100%;
             position: relative;
             form {
                 position: relative;
@@ -808,7 +811,7 @@ body {
                 border-radius: 5px;
                 box-shadow: 0px 3px 6px 3px rgba(32,32,32,0.8);
                 h5 {
-                    font-size: 2vw;
+                    font-size: 1.5vw;
                     color: orange;
                     text-align: center;
                     margin-bottom: 1vw;
@@ -875,7 +878,7 @@ body {
                     .textarea {
                         margin: .5vw 0;
                         width: 100%;
-                        height: 15vw;
+                        height: 28vw;
                         font-size: 1.5vw;
                     }
                     button {
@@ -890,28 +893,48 @@ body {
             display: none;
         }
     }
+    @media (max-width: 900px) {
+        #question .question_wrap {
+            width: 95vmin;
+            form h5 {
+                font-size: 4vw;
+            }
+            .inputs {
+                .inputs_item input {
+                    font-size: 4vmin;
+                }
+                .textarea {
+                    font-size: 4vmin;
+                    padding: 2vw 1vw;
+                }
+                button {
+                    font-size: 4vmin;
+                }
+            }
+        }
+    }
     @media (max-width: 769px) {
         #question {
             padding: 0;
             .question_wrap {
-                margin: 0 auto 5vmin auto !important;
+                margin: 0 auto 7vw auto !important;
                 width: 95vw;
-                padding: 5vmin 0;
+                padding: 7vw 0;
                 form {
                     h5 {
-                        font-size: 3vw !important;
+                        font-size: 6vw !important;
                     }
                     .inputs {
                         input {
-                            font-size: 3vw;
+                            font-size: 4vw;
                         }
                     }
                     .textarea {
-                        font-size: 3vw;
-                        height: 50vw;
+                        font-size: 4vw;
+                        height: 70vw;
                     } 
                     button {
-                        font-size: 3vw;
+                        font-size: 6vw;
                         padding: 2vw;
                         margin-bottom: 3vw;
                     }
@@ -1119,6 +1142,9 @@ body {
     }
 
 }
+.how_item1_side3 {
+    max-width: unset !important;
+}
 @media (max-width: 1300px) {
     .how_item1_side {
         .how_item1_side_inner {
@@ -1174,14 +1200,14 @@ body {
         }
     }
 }
-@media (max-width: 769px) {
+@media (max-width: 900px) {
     .how_item1_side {
         margin: 0 auto 5vmin auto !important;
         width: 95vmin;
         .how_item1_side_inner {
             width: 100%;
             h5 {
-                font-size: 6vmin !important;
+                font-size: 4vw !important;
             }
             .getPhone {
                 button {
@@ -1440,7 +1466,7 @@ body {
         margin-top: 10vw;
     }
 }
-@media (max-width: 769px) {
+@media (max-width: 900px) {
     .gallery {
         background: white;
         h2 {
